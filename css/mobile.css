@@ -111,87 +111,19 @@ body {
 
 /* Slider*/
 
-.main__slider{
-  width: 250px;
-  height: 50px;
-  overflow: hidden;
+.main__scroll-top{
   display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+
+
 }
 
-.main__slider-top {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.sliders {
-  width: 500%;
-  height: 100%;
-
-  display: flex;
-}
-
-.slider__nav {
-  position: absolute;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-}
-
-.sliders__text {
-  width: 30%;
-  transition: all 0.6s ease;
-}
-
-.slider__nav-bar {
-  height: 8px;
-  width: 25px;
-  margin: 6px;
-  background-color: #ddd;
-
+.scrloll__text{
+  font-family:  "TT Lakes Regular";
+  border: 2px solid #41f6d7;
   border-radius: 5px;
-  opacity: 0.5;
-  transition: all 0.4s ease;
-}
+  padding: 5px;
 
-span{
-  font-size: 16px;
-  font-family: "TT Lakes Regular", sans-serif;
-
-  width: 100%;
-  height: 100%;
-}
-
-.slider__nav-bar:hover {
-  opacity: 0.8;
-  transform: scale(1.1);
-}
-
-.sliders__input {
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-}
-
-#slide1:checked ~ .s1 {
-  margin-left: 0;
-}
-
-#slide2:checked ~ .s1 {
-  margin-left: -20%;
-}
-
-#slide3:checked ~ .s1 {
-  margin-left: -40%;
-}
-
-#slide4:checked ~ .s1 {
-  margin-left: -60%;
-}
-
-#slide5:checked ~ .s1 {
-  margin-left: -80%;
+  margin: 0 10px;
 }
