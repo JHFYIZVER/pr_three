@@ -12,6 +12,21 @@
   src: url("../font/TTLakes-Bold.ttf");
 }
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 /* Body */
 
 body {
@@ -22,12 +37,6 @@ body {
 
   max-width: 320px;
   background-color: #f8f8f8;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 /* Header */
@@ -50,6 +59,11 @@ body {
   column-gap: 10px;
 }
 
+.menu {
+  background: none;
+  border: none;
+}
+
 .menu:active {
   transform: scale(0.9);
 }
@@ -60,8 +74,18 @@ body {
   column-gap: 10px;
 }
 
+.setting {
+  background: none;
+  border: none;
+}
+
 .setting:active {
   transform: scale(0.9);
+}
+
+.search {
+  background: none;
+  border: none;
 }
 
 .search:active {
@@ -90,6 +114,7 @@ body {
   font-weight: bold;
   line-height: 40px;
   letter-spacing: -0.6px;
+  margin: 15px 0;
 
   color: #1b1c21;
 }
@@ -98,7 +123,7 @@ body {
   content: "";
 
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 10px;
   vertical-align: text-top;
 
   width: 4px;
@@ -109,21 +134,200 @@ body {
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
-/* Slider*/
+/* Scroll */
 
-.main__scroll-top{
+.main__scroll-services {
   display: flex;
   overflow-x: scroll;
   white-space: nowrap;
 
-
+  padding: 0 15px;
+  margin: 15px 0;
 }
 
-.scrloll__text{
-  font-family:  "TT Lakes Regular";
+.scrloll-text {
+  font-family: "TT Lakes Regular";
+  color: #7e7e82;
+
   border: 2px solid #41f6d7;
+  background: none;
   border-radius: 5px;
   padding: 5px;
 
-  margin: 0 10px;
+  margin-right: 10px;
 }
+
+.scrloll-text:active {
+  transform: scale(0.9);
+}
+
+.description {
+  padding: 0 15px;
+  margin: 15px 0;
+
+  font-family: "TT Lakes Regular";
+  font-size: clamp(14px, 5vw, 48px);
+}
+
+.read-more {
+  font-family: "TT Lakes Regular";
+  font-size: clamp(14px, 5vw, 48px);
+  font-weight: 600;
+
+  margin: 15px 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main__brend {
+  padding: 0 15px;
+  border-top: 1px solid #d9fff5;
+  border-bottom: 1px solid #d9fff5;
+}
+
+.sub-title {
+  font-family: "TT Lakes Regular";
+  font-size: clamp(16px, 5vw, 48px);
+  color: #7e7e82;
+  font-weight: 300;
+  text-transform: uppercase;
+
+  margin: 15px 0;
+}
+
+/* Brend */
+
+.main__scroll-brend{
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin: 15px 0;
+}
+
+.nav-scroll{
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.bar{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  margin: 0 10px;
+  background-color: #a0a0a0;
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar:hover{
+  transform: scale(1.2);
+  background-color: #a0a0a0;
+  opacity: 0.8;
+}
+
+input[name="brend"]{
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.brand-name {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #EAEAEA;
+
+  border-radius: 6px;
+  margin-right: 10px;
+  padding: 10px;
+  min-width: 240px;
+  min-height: 72px;
+}
+
+.brand-name:active{
+  transform: scale(0.9);
+}
+
+.main__repair__types{
+  padding: 0 15px;
+  border-bottom: 1px solid #d9fff5;
+}
+
+/* Scroll-types */
+
+.main__scroll-types{
+  display: flex;
+  overflow-x: scroll;
+  white-space: nowrap;
+  margin: 15px 0;
+}
+
+
+.name-types{
+  font-family: "TT Lakes Regular";
+  color: #1B1C21;
+  font-size: clamp(16px, 5vw, 48px);
+  font-weight: 600;
+
+  display: grid;
+  grid-template-rows: 80px;
+  align-items: center;
+  justify-items: start;
+
+
+  background-color: #fff;
+  border: 1px solid #EAEAEA;
+
+  border-radius: 6px;
+  margin-right: 10px;
+  padding: 10px;
+  min-width: 240px;
+  min-height: 160px;
+}
+
+
+.icon-item{
+  justify-self: end;
+}
+
+
+.name-types:active{
+  transform: scale(0.9);
+}
+
+.bar{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+
+  margin: 0 10px;
+  background-color: #a0a0a0;
+  opacity: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.bar:hover{
+  transform: scale(1.2);
+  background-color: #a0a0a0;
+  opacity: 0.8;
+}
+
+input[name="types"]{
+  position: absolute;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+

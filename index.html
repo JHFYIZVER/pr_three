@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="header__user__info">
-        <div class="menu">
+        <button class="menu">
           <img
             src="./img/menu.svg"
             alt=""
@@ -19,7 +19,7 @@
             width="40"
             height="40"
           />
-        </div>
+        </button>
         <div class="logo">
           <img
             src="./img/logo.svg"
@@ -31,7 +31,7 @@
         </div>
       </div>
       <nav class="header__nav">
-        <div class="setting">
+        <button class="setting">
           <img
             src="./img/setting.svg"
             alt=""
@@ -39,8 +39,8 @@
             width="40"
             height="40"
           />
-        </div>
-        <div class="search">
+        </button>
+        <button class="search">
           <img
             src="./img/search.svg"
             alt=""
@@ -48,17 +48,204 @@
             width="40"
             height="40"
           />
-        </div>
+        </button>
       </nav>
     </header>
     <main class="main">
       <h1 class="title">Услуги и сервисы</h1>
-      <div class="main__scroll-top">
-        <div class="scrloll-text">Ремонтируемые устройства</div>
-        <div class="scrloll-text">Ремонтируемые устройства</div>
-        <div class="scrloll-text">Ремонтируемые устройства</div>
-        <div class="scrloll-text">Ремонтируемые устройства</div>
-        <div class="scrloll-text">Ремонтируемые устройства</div>
+      <div class="main__scroll-services">
+        <button class="scrloll-text">Ремонтируемые устройства</button>
+        <button class="scrloll-text">Дополнительные услуги</button>
+        <button class="scrloll-text">Цены на услуги</button>
+        <button class="scrloll-text">Адреса сервисных центров</button>
+        <button class="scrloll-text">Специальные цены</button>
+      </div>
+      <div class="description">
+        Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+        гарантией производителя.
+      </div>
+      <div class="read-more">
+        <img
+          src="./img/arrow.svg"
+          alt=""
+          aria-hidden="true"
+          width="8"
+          height="11"
+        />
+        <span>Читать далее</span>
+      </div>
+      <img src="./img/cps.png" />
+      <div class="main__brend">
+        <h2 class="sub-title">Ремонт техники различных брендов</h2>
+        <div class="main__scroll-brend">
+          <input type="text" name="brend" id="b1" checked />
+          <input type="text" name="brend" id="b2" />
+          <input type="text" name="brend" id="b3" />
+          <input type="text" name="brend" id="b4" />
+          <input type="text" name="brend" id="b5" />
+          <input type="text" name="brend" id="b6" />
+          <input type="text" name="brend" id="b7" />
+          <input type="text" name="brend" id="b8" />
+          <button class="brand-name">
+            <img src="./img/Lenovo.png" width="108px" height="32px" />
+            <img
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="brand-name">
+            <img src="./img/Samsung.png" width="116px" height="38px" />
+            <img
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="brand-name">
+            <img src="./img/Apple.png" width="44px" height="44px" />
+            <img
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="brand-name">
+            <img src="./img/Bosch.png" width="128px" height="27px" />
+            <img
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="brand-name">
+            <img src="./img/Hp.png" width="52px" height="52px" />
+            <img
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="brand-name">
+            <img src="./img/Acer.png" width="94px" height="24px" />
+            <img
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="brand-name">
+            <img src="./img/ViewSonic.png" width="128px" height="21px" />
+            <img
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+            <button class="brand-name">
+              <img src="./img/Sony.png" width="128px" height="26px" />
+              <img
+                src="./img/icon-go.svg"
+                alt=""
+                aria-hidden="true"
+                width="40"
+                height="40"
+              />
+            </button>
+          </button>
+        </div>
+        <div class="nav-scroll">
+          <label for="r1" class="bar"></label>
+          <label for="r2" class="bar"></label>
+          <label for="r3" class="bar"></label>
+          <label for="r4" class="bar"></label>
+          <label for="r5" class="bar"></label>
+          <label for="r6" class="bar"></label>
+          <label for="r7" class="bar"></label>
+          <label for="r8" class="bar"></label>
+        </div>
+      </div>
+      <div class="main__repair__types">
+        <h2 class="sub-title">Ремонт различных видов техники</h2>
+        <div class="main__scroll-types">
+          <input type="text" name="types" id="t1" checked />
+          <input type="text" name="types" id="t2" />
+          <input type="text" name="types" id="t3" />
+          <input type="text" name="types" id="t4" />
+          <input type="text" name="types" id="t5" />
+          <input type="text" name="types" id="t6" />
+          <input type="text" name="types" id="t7" />
+          <input type="text" name="types" id="t8" />
+
+          <button class="name-types">
+            <span>Ремонт ноутбуков</span>
+            <img
+              class="icon-item"
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="name-types">
+            <span>Ремонт планшетов</span>
+            <img
+              class="icon-item"
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="name-types">
+            <span>Ремонт ПК</span>
+            <img
+              class="icon-item"
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+          <button class="name-types">
+            <span>Ремонт мониторов</span>
+            <img
+              class="icon-item"
+              src="./img/icon-go.svg"
+              alt=""
+              aria-hidden="true"
+              width="40"
+              height="40"
+            />
+          </button>
+        </div>
+        <div class="nav-scroll">
+          <label for="t1" class="bar"></label>
+          <label for="t2" class="bar"></label>
+          <label for="t3" class="bar"></label>
+          <label for="t4" class="bar"></label>
+          <label for="t5" class="bar"></label>
+          <label for="t6" class="bar"></label>
+          <label for="t7" class="bar"></label>
+          <label for="t8" class="bar"></label>
+        </div>
       </div>
     </main>
   </body>
