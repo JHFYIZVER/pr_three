@@ -11,16 +11,16 @@
   <body>
     <header class="header">
       <div class="header__user__info">
-        <button class="menu">
+        <button class="header__menu">
           <img
             src="./img/menu.svg"
             alt=""
             aria-hidden="true"
-            width="40"
-            height="40"
+            width="18"
+            height="16"
           />
         </button>
-        <div class="logo">
+        <div class="header__logo">
           <img
             src="./img/logo.svg"
             alt=""
@@ -31,22 +31,22 @@
         </div>
       </div>
       <nav class="header__nav">
-        <button class="setting">
+        <button class="header__setting">
           <img
             src="./img/setting.svg"
             alt=""
             aria-hidden="true"
-            width="40"
-            height="40"
+            width="20"
+            height="20"
           />
         </button>
-        <button class="search">
+        <button class="header__search">
           <img
             src="./img/search.svg"
             alt=""
             aria-hidden="true"
-            width="40"
-            height="40"
+            width="16"
+            height="20"
           />
         </button>
       </nav>
@@ -54,11 +54,66 @@
     <main class="main">
       <h1 class="title">Услуги и сервисы</h1>
       <div class="main__scroll-services">
-        <button class="scrloll-text">Ремонтируемые устройства</button>
-        <button class="scrloll-text">Дополнительные услуги</button>
-        <button class="scrloll-text">Цены на услуги</button>
-        <button class="scrloll-text">Адреса сервисных центров</button>
-        <button class="scrloll-text">Специальные цены</button>
+        <div class="main__scroll-item">
+          <input
+            class="main__scroll-item-radio-button"
+            type="radio"
+            id="repairable_devices"
+            name="selector"
+            checked
+          />
+          <label for="repairable_devices" class="main__scroll-item-label">
+            <span>Ремонтируемые устройства</span>
+          </label>
+        </div>
+        <div class="main__scroll-item">
+          <input
+            class="main__scroll-item-radio-button"
+            type="radio"
+            id="additional_services"
+            name="selector"
+            checked
+          />
+          <label for="additional_services" class="main__scroll-item-label">
+            <span>Дополнительные услуги</span>
+          </label>
+        </div>
+        <div class="main__scroll-item">
+          <input
+            class="main__scroll-item-radio-button"
+            type="radio"
+            id="prices_services"
+            name="selector"
+            checked
+          />
+          <label for="prices_services" class="main__scroll-item-label">
+            <span>Цены на услуги</span>
+          </label>
+        </div>
+        <div class="main__scroll-item">
+          <input
+            class="main__scroll-item-radio-button"
+            type="radio"
+            id="addresses_center"
+            name="selector"
+            checked
+          />
+          <label for="addresses_center" class="main__scroll-item-label">
+            <span>Адреса сервисных центров</span>
+          </label>
+        </div>
+        <div class="main__scroll-item">
+          <input
+            class="main__scroll-item-radio-button"
+            type="radio"
+            id="special_prices"
+            name="selector"
+            checked
+          />
+          <label for="special_prices" class="main__scroll-item-label">
+            <span>Специальные цены</span>
+          </label>
+        </div>
       </div>
       <div class="description">
         Мы являемся авторизованным сервисным центром по ремонту техники Dell.
@@ -75,20 +130,20 @@
         />
         <span>Читать далее</span>
       </div>
-      <img src="./img/cps.png" />
+      <img src="./img/cps.png" alt="" />
       <div class="main__brend">
         <h2 class="sub-title">Ремонт техники различных брендов</h2>
         <div class="main__scroll-brend">
-          <input type="text" name="brend" id="b1" checked />
-          <input type="text" name="brend" id="b2" />
-          <input type="text" name="brend" id="b3" />
-          <input type="text" name="brend" id="b4" />
-          <input type="text" name="brend" id="b5" />
-          <input type="text" name="brend" id="b6" />
-          <input type="text" name="brend" id="b7" />
-          <input type="text" name="brend" id="b8" />
+          <input type="radio" name="brend" id="b1" checked />
+          <input type="radio" name="brend" id="b2" />
+          <input type="radio" name="brend" id="b3" />
+          <input type="radio" name="brend" id="b4" />
+          <input type="radio" name="brend" id="b5" />
+          <input type="radio" name="brend" id="b6" />
+          <input type="radio" name="brend" id="b7" />
+          <input type="radio" name="brend" id="b8" />
           <button class="brand-name">
-            <img src="./img/Lenovo.png" width="108px" height="32px" />
+            <img src="./img/Lenovo.png" width="108px" height="32px" alt="" />
             <img
               src="./img/icon-go.svg"
               alt=""
@@ -98,7 +153,7 @@
             />
           </button>
           <button class="brand-name">
-            <img src="./img/Samsung.png" width="116px" height="38px" />
+            <img src="./img/Samsung.png" width="116px" height="38px" alt="" />
             <img
               src="./img/icon-go.svg"
               alt=""
@@ -108,7 +163,7 @@
             />
           </button>
           <button class="brand-name">
-            <img src="./img/Apple.png" width="44px" height="44px" />
+            <img src="./img/Apple.png" width="44px" height="44px" alt="" />
             <img
               src="./img/icon-go.svg"
               alt=""
@@ -118,7 +173,7 @@
             />
           </button>
           <button class="brand-name">
-            <img src="./img/Bosch.png" width="128px" height="27px" />
+            <img src="./img/Bosch.png" width="128px" height="27px" alt="" />
             <img
               src="./img/icon-go.svg"
               alt=""
@@ -128,7 +183,7 @@
             />
           </button>
           <button class="brand-name">
-            <img src="./img/Hp.png" width="52px" height="52px" />
+            <img src="./img/Hp.png" width="52px" height="52px" alt="" />
             <img
               src="./img/icon-go.svg"
               alt=""
@@ -138,7 +193,7 @@
             />
           </button>
           <button class="brand-name">
-            <img src="./img/Acer.png" width="94px" height="24px" />
+            <img src="./img/Acer.png" width="94px" height="24px" alt="" />
             <img
               src="./img/icon-go.svg"
               alt=""
@@ -148,7 +203,7 @@
             />
           </button>
           <button class="brand-name">
-            <img src="./img/ViewSonic.png" width="128px" height="21px" />
+            <img src="./img/ViewSonic.png" width="128px" height="21px" alt="" />
             <img
               src="./img/icon-go.svg"
               alt=""
@@ -157,7 +212,7 @@
               height="40"
             />
             <button class="brand-name">
-              <img src="./img/Sony.png" width="128px" height="26px" />
+              <img src="./img/Sony.png" width="128px" height="26px" alt="" />
               <img
                 src="./img/icon-go.svg"
                 alt=""
@@ -182,14 +237,14 @@
       <div class="main__repair__types">
         <h2 class="sub-title">Ремонт различных видов техники</h2>
         <div class="main__scroll-types">
-          <input type="text" name="types" id="t1" checked />
-          <input type="text" name="types" id="t2" />
-          <input type="text" name="types" id="t3" />
-          <input type="text" name="types" id="t4" />
-          <input type="text" name="types" id="t5" />
-          <input type="text" name="types" id="t6" />
-          <input type="text" name="types" id="t7" />
-          <input type="text" name="types" id="t8" />
+          <input type="radio" name="types" id="t1" checked />
+          <input type="radio" name="types" id="t2" />
+          <input type="radio" name="types" id="t3" />
+          <input type="radio" name="types" id="t4" />
+          <input type="radio" name="types" id="t5" />
+          <input type="radio" name="types" id="t6" />
+          <input type="radio" name="types" id="t7" />
+          <input type="radio" name="types" id="t8" />
 
           <button class="name-types">
             <span>Ремонт ноутбуков</span>

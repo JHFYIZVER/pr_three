@@ -33,7 +33,7 @@ body {
   margin: 0 auto;
   padding: 0;
   line-height: 1.5;
-  font-family: "TT lakes", sans-serif;
+  font-family:  "TT Lakes Regular", sans-serif;
 
   max-width: 320px;
   background-color: #f8f8f8;
@@ -59,12 +59,18 @@ body {
   column-gap: 10px;
 }
 
-.menu {
-  background: none;
+.header__menu {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF3E79;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
 }
 
-.menu:active {
+.header__menu:active {
   transform: scale(0.9);
 }
 
@@ -74,21 +80,33 @@ body {
   column-gap: 10px;
 }
 
-.setting {
-  background: none;
+.header__setting {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF3E79;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
 }
 
-.setting:active {
+.header__setting:active {
   transform: scale(0.9);
 }
 
-.search {
-  background: none;
+.header__search {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FF3E79;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none;
 }
 
-.search:active {
+.header__search:active {
   transform: scale(0.9);
 }
 
@@ -140,25 +158,38 @@ body {
   display: flex;
   overflow-x: scroll;
   white-space: nowrap;
+}
 
+.main__scroll-item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   padding: 0 15px;
   margin: 15px 0;
 }
 
-.scrloll-text {
+.main__scroll-item-label{
   font-family: "TT Lakes Regular";
-  color: #7e7e82;
-
-  border: 2px solid #41f6d7;
-  background: none;
-  border-radius: 5px;
-  padding: 5px;
-
-  margin-right: 10px;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 10px 15px;
 }
 
-.scrloll-text:active {
-  transform: scale(0.9);
+.main__scroll-item-radio-button{
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main__scroll-item-radio-button:checked + .main__scroll-item-label{
+  transition: all .6s linear;
+  border: 1px solid #41f6d7;
+  border-radius: 6px;
+  padding: 10px 15px;
+  background: #ffffff;
 }
 
 .description {
@@ -284,7 +315,6 @@ input[name="brend"]{
   grid-template-rows: 80px;
   align-items: center;
   justify-items: start;
-
 
   background-color: #fff;
   border: 1px solid #EAEAEA;
