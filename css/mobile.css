@@ -241,13 +241,23 @@ img {
   margin: 15px 0;
 }
 
-.nav-scroll{
+.main__scroll-brend-item{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 15px;
   margin: 15px 0;
 }
 
-.bar{
+.main__scroll-brend-item-radio-button{
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.main__scroll-brend-item-label{
   width: 12px;
   height: 12px;
   border-radius: 50%;
@@ -258,19 +268,41 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.bar:hover{
+.main__scroll-brend-item-label:hover{
   transform: scale(1.2);
   background-color: #a0a0a0;
   opacity: 0.8;
 }
 
-input[name="brend"]{
-  position: absolute;
-  visibility: hidden;
-  width: 0;
-  height: 0;
-  opacity: 0;
+.main__scroll-brend-item-radio-button:checked + .company {
+  transition: all .6s linear;
+  border: 1px solid #41f6d7;
+  border-radius: 6px;
+  background: #ffffff;
+  opacity: 100%;
+  background-color: #fff;
 }
+
+.main__scroll-brend-item-radio-button:checked + .main__scroll-brend-item-label{
+  transition: all .6s linear;
+  background-color: #41f6d7;
+  opacity: 100%;
+ 
+}
+
+
+.company{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 240px;
+  min-height: 72px;
+  border: 1px solid #EAEAEA;
+  border-radius: 6px;
+  background: #fff;
+  padding: 10px;
+}
+
 
 .brand-name {
   display: flex;
@@ -286,13 +318,18 @@ input[name="brend"]{
   min-height: 72px;
 }
 
-.brand-name:active{
-  transform: scale(0.9);
-}
+
 
 .main__repair__types{
   padding: 0 15px;
   border-bottom: 1px solid #d9fff5;
+}
+
+.nav-scroll{
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  margin: 15px 0;
 }
 
 /* Scroll-types */
