@@ -156,8 +156,12 @@ body {
 
 .main__scroll-services {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   white-space: nowrap;
+}
+
+.main__scroll-services::-webkit-scrollbar{
+  width: 0;
 }
 
 .main__scroll-item{
@@ -236,9 +240,13 @@ img {
 
 .main__scroll-brend{
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   white-space: nowrap;
   margin: 15px 0;
+}
+
+.main__scroll-brend::-webkit-scrollbar{
+  width: 0;
 }
 
 .main__scroll-brend-item{
@@ -336,11 +344,14 @@ img {
 
 .main__scroll-types{
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   white-space: nowrap;
   margin: 15px 0;
 }
 
+.main__scroll-types::-webkit-scrollbar{
+  width: 0;
+}
 
 .name-types{
   font-family: "TT Lakes Regular";
