@@ -11,7 +11,7 @@
   <body>
     <header class="header">
       <div class="header__user__info">
-        <button class="header__menu">
+        <button class="menu header__button">
           <img
             src="./img/menu.svg"
             alt=""
@@ -29,9 +29,39 @@
             height="52"
           />
         </div>
+        <img src="./img/line.svg" />
       </div>
       <nav class="header__nav">
-        <button class="header__setting">
+        <button class="header__button-hidden">
+          <img
+            src="./img/phone.svg"
+            alt=""
+            aria-hidden="true"
+            width="18"
+            height="18"
+          />
+        </button>
+        <button class="header__button-hidden">
+          <img
+            src="./img/message.svg"
+            alt=""
+            aria-hidden="true"
+            width="20"
+            height="20"
+          />
+        </button>
+        <button class="header__button-hidden">
+          <img
+            src="./img/contact.svg"
+            alt=""
+            aria-hidden="true"
+            width="20"
+            height="18"
+          />
+        </button>
+        <img class="line" src="./img/line.svg" />
+
+        <button class="header__button">
           <img
             src="./img/setting.svg"
             alt=""
@@ -40,7 +70,7 @@
             height="20"
           />
         </button>
-        <button class="header__search">
+        <button class="header__button">
           <img
             src="./img/search.svg"
             alt=""
@@ -116,21 +146,25 @@
         </div>
       </div>
       <div class="description">
-        Мы являемся авторизованным сервисным центром по ремонту техники Dell.
-        Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
-        гарантией производителя.
+        <div class="description-text">
+          Мы являемся авторизованным сервисным центром по ремонту техники Dell.
+          Только у нас вы можете отремонтировать свой ноутбук Dell с официальной
+          гарантией производителя.
+          <div class="description__read-more">
+            <img
+              src="./img/arrow.svg"
+              alt=""
+              aria-hidden="true"
+              width="8"
+              height="11"
+            />
+            <span>Читать далее</span>
+          </div>
+        </div>
+        <div class="description__img">
+          <img src="./img/cps.png" alt="" />
+        </div>
       </div>
-      <div class="read-more">
-        <img
-          src="./img/arrow.svg"
-          alt=""
-          aria-hidden="true"
-          width="8"
-          height="11"
-        />
-        <span>Читать далее</span>
-      </div>
-      <img src="./img/cps.png" alt="" />
       <div class="main__brend">
         <h2 class="sub-title">Ремонт техники различных брендов</h2>
         <div class="main__scroll-brend">
@@ -238,7 +272,7 @@
               checked
             />
             <label for="acer" class="company" id="acer">
-              <img src="./img/Acer.png" width="94px" height="24px" alt=""/>
+              <img src="./img/Acer.png" width="94px" height="24px" alt="" />
               <img
                 src="./img/icon-go.svg"
                 alt=""
@@ -257,7 +291,12 @@
               checked
             />
             <label for="view_sonic" class="company" id="view_sonic">
-              <img src="./img/ViewSonic.png" width="128px" height="21px" alt="" />
+              <img
+                src="./img/ViewSonic.png"
+                width="128px"
+                height="21px"
+                alt=""
+              />
               <img
                 src="./img/icon-go.svg"
                 alt=""

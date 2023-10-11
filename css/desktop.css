@@ -1,0 +1,45 @@
+@media (min-width: 769px) and (max-width: 1440px) {
+  /* Body */
+  body {
+    max-width: 1400px;
+  }
+
+  /* Header */
+
+  .header {
+   display: none;
+  }
+
+
+  .header__nav {
+    margin: 0 15px;
+  }
+
+  /* Main */
+
+  .description {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .description__img {
+    flex-basis: 50%;
+  }
+
+  .description-text {
+    flex-basis: 50%;
+  }
+
+  /* Scroll */
+
+  .main__scroll-brend {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nav-scroll {
+    display: none;
+  }
+}
