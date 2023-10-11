@@ -51,6 +51,12 @@
     justify-content: space-between;
   }
 
+
+
+  .description-text-tablet {
+    display: block;
+  }
+
   .description__img {
     flex-basis: 50%;
   }

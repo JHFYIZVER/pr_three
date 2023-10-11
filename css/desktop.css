@@ -24,6 +24,11 @@
     justify-content: space-between;
   }
 
+
+ .description-text-desktop {
+   display: block;
+ }
+
   .description__img {
     flex-basis: 50%;
   }

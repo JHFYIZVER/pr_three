@@ -139,9 +139,17 @@ body {
   font-size: clamp(14px, 5vw, 20px);
 }
 
+.description-text-tablet{
+  display: none;
+}
+
+.description-text-desktop{
+  display: none;
+}
+
 .description__read-more {
   font-family: "TT Lakes Regular";
-  font-size: clamp(14px, 5vw, 20px);
+  font-size: clamp(14px, 5vw, 16px);
   font-weight: 600;
 
   margin: 15px 0;
@@ -219,7 +227,7 @@ img {
 
 .main__scroll-brend {
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
   white-space: nowrap;
   margin: 15px 0;
 }
@@ -259,6 +267,10 @@ img {
   transform: scale(1.2);
   background-color: #a0a0a0;
   opacity: 0.8;
+}
+
+.company{
+  display: flex;
 }
 
 .main__scroll-brend-item-radio-button:checked + .company {
