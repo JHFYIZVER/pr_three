@@ -12,11 +12,6 @@
   src: url("../font/TTLakes-Bold.ttf");
 }
 
-body {
-  max-width: 320px;
-}
-
-
 *,
 *::before,
 *::after {
@@ -41,6 +36,12 @@ body {
   font-family: "TT Lakes Regular", sans-serif;
 
   background-color: #f8f8f8;
+}
+
+/* Container */
+
+.page-container {
+  margin: 0 auto;
 }
 
 /* Header */
@@ -88,7 +89,7 @@ body {
   display: none;
 }
 
-.line {
+.line-hidden {
   display: none;
 }
 
@@ -97,6 +98,12 @@ body {
 .main {
   width: 100%;
   height: 100%;
+}
+
+.main__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title {
@@ -124,14 +131,18 @@ body {
   background: #41f6d7;
 }
 
-.description {
+.desktop-button-hidden {
+  display: none;
+}
+
+.main__description {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin-bottom: 15px;
 }
 
-.description-text {
+.main__description-text {
   padding: 0 15px;
   margin: 15px 0;
 
@@ -139,15 +150,15 @@ body {
   font-size: clamp(14px, 5vw, 20px);
 }
 
-.description-text-tablet{
+.main__description-text-tablet {
   display: none;
 }
 
-.description-text-desktop{
+.main__description-text-desktop {
   display: none;
 }
 
-.description__read-more {
+.main__description-read-more {
   font-family: "TT Lakes Regular";
   font-size: clamp(14px, 5vw, 16px);
   font-weight: 600;
@@ -157,6 +168,10 @@ body {
   display: flex;
   align-items: center;
   column-gap: 10px;
+}
+
+.main__page-container{
+  width: 100%;
 }
 
 img {
@@ -169,6 +184,7 @@ img {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
+  justify-content: space-between;
 }
 
 .main__scroll-services::-webkit-scrollbar {
@@ -212,6 +228,7 @@ img {
   border-top: 1px solid #d9fff5;
   border-bottom: 1px solid #d9fff5;
 }
+
 
 .sub-title {
   font-family: "TT Lakes Regular";
@@ -269,7 +286,7 @@ img {
   opacity: 0.8;
 }
 
-.company{
+.company {
   display: flex;
 }
 
@@ -286,6 +303,13 @@ img {
   transition: all 0.6s linear;
   background-color: #41f6d7;
   opacity: 100%;
+}
+
+.main__scroll-brend-item-continer-img {
+  display: flex;
+  align-items: center;
+  width: 128px;
+  height: 38px;
 }
 
 .company {
@@ -319,7 +343,7 @@ img {
   border-bottom: 1px solid #d9fff5;
 }
 
-.nav-scroll {
+.main__nav-scroll {
   display: flex;
   align-self: center;
   justify-content: space-around;
