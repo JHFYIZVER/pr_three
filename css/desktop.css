@@ -19,7 +19,7 @@
   }
 
   /* Main */
-  
+
   .main__scroll-services {
     justify-content: space-evenly;
   }
@@ -34,5 +34,6 @@
 
   .main__scroll-brend {
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }

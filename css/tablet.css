@@ -4,20 +4,8 @@
     margin: 0 auto;
   }
 
-  .header {
-    justify-content: space-between;
-  }
-
-  .header__user__info {
-    margin: 0 20px;
-  }
-
-  .header__logo{
+  .header__logo {
     order: 2;
-  }
-
-  .header__nav {
-    margin: 0 20px;
   }
 
   .header__button-hidden {
@@ -34,12 +22,11 @@
     column-gap: 20px;
     margin: 0 15px;
   }
-  .main__description-text{
+  .main__description-text {
     padding: 0;
   }
 
   .main__description-text-tablet {
-
     display: flex;
   }
 
@@ -56,14 +43,13 @@
   .main__scroll-brend {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
     column-gap: 10px;
-    overflow-x: hidden;
   }
 
   .main__scroll-brend-item {
     justify-content: center;
-  }
-  .main__scroll-brend-item::-webkit-scrollbar {
-    width: 0;
+    padding: 0;
   }
 }

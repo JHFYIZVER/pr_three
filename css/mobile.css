@@ -51,7 +51,7 @@ body {
   height: 88px;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   background: #ffffff;
@@ -59,15 +59,18 @@ body {
 }
 
 .header__user__info {
+  min-width: 160px;
   display: flex;
   align-items: center;
   column-gap: 10px;
+  margin: 0 20px;
 }
 
 .header__nav {
   display: flex;
   justify-content: space-between;
   column-gap: 10px;
+  margin: 0 20px;
 }
 
 .header__button {
