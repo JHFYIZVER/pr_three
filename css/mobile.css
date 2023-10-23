@@ -12,11 +12,6 @@
   src: url("../font/TTLakes-Bold.ttf");
 }
 
-body {
-  max-width: 320px;
-}
-
-
 *,
 *::before,
 *::after {
@@ -35,12 +30,34 @@ h6 {
 /* Body */
 
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   line-height: 1.5;
   font-family: "TT Lakes Regular", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 
   background-color: #f8f8f8;
+}
+
+/* Container */
+
+.container {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.content-active {
+  transition: all 0.5s;
+  overflow: hidden;
+  height: 100vh;
+  opacity: 0.2;
+}
+
+.page-container-content {
+  transition: all 0.5s;
 }
 
 /* Header */
@@ -48,9 +65,10 @@ body {
 .header {
   width: 100%;
   height: 88px;
+  position: fixed;
 
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 
   background: #ffffff;
@@ -61,15 +79,17 @@ body {
   display: flex;
   align-items: center;
   column-gap: 10px;
+  margin-left: 80px;
 }
 
 .header__nav {
   display: flex;
   justify-content: space-between;
   column-gap: 10px;
+  margin: 0 20px;
 }
 
-.header__button {
+.button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -78,9 +98,30 @@ body {
   align-items: center;
   justify-content: center;
   border: none;
+  cursor: pointer;
+  transition: all 0.5s linear;
 }
 
-.header__button:active {
+.button:hover {
+  transition: all 0.5s linear;
+  background-color: #d93264;
+}
+
+.header__button-setting,
+.header__button-search {
+  visibility: visible;
+}
+
+.header__label-desktop {
+  visibility: hidden;
+  display: flex;
+}
+
+.header__button-text {
+  width: 0;
+}
+
+.button:active {
   transform: scale(0.9);
 }
 
@@ -88,8 +129,210 @@ body {
   display: none;
 }
 
-.line {
+.line-hidden {
   display: none;
+}
+
+/* Menu__btn */
+
+.header__button-menu {
+  top: 22px;
+  left: 15px;
+  z-index: 99;
+  position: fixed;
+  visibility: visible;
+}
+
+.header__button-menu span {
+  position: absolute;
+  height: 2px;
+  background: #ffffff;
+  border-radius: 1px;
+  transition: all 0.5s;
+  left: 11px;
+}
+
+.header__button-menu span:nth-child(1) {
+  transform: translateY(5px);
+  width: 14px;
+  left: 11px;
+  transition: all 0.5s;
+}
+
+.header__button-menu span:nth-child(2) {
+  transform: translateY(0);
+  width: 10px;
+  left: 11px;
+}
+
+.header__button-menu span:nth-child(3) {
+  transform: translateY(-5px);
+  width: 18px;
+  transition: all 0.5s;
+}
+
+.cross-active span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+  width: 18px;
+  left: 11px;
+  transition: all 0.5s;
+}
+
+.cross-active span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+  width: 18px;
+  left: 11px;
+  transition: all 0.5s;
+}
+
+.cross-active span:nth-child(2) {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+/* Aside */
+
+.page-aside {
+  z-index: 1;
+  position: absolute;
+  left: -320px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  min-width: 320px;
+  min-height: max-content;
+  transition: transform 0.5s;
+}
+
+.aside-active {
+  transition: all 0.5s;
+  transform: translateX(100%);
+  box-shadow: 0.5px 0px 20px 0px #919191;
+}
+
+/* Aside__header */
+
+.aside-header {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+.cross-active {
+  position: absolute;
+}
+
+.header-logo {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  margin-left: 30px;
+}
+
+/* Aside__nav */
+
+.aside-nav {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.aside-nav-item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  max-width: fit-content;
+}
+
+.item-link {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+  width: fit-content;
+  padding: 10px;
+}
+
+.active-link {
+  color: #7e7e82;
+}
+
+.active-item::before {
+  content: "";
+
+  display: inline-block;
+  margin-right: 10px;
+  vertical-align: text-top;
+  position: absolute;
+  left: 0;
+
+  width: 4px;
+  height: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: #41f6d7;
+}
+
+/*Aside__footer */
+
+.footer-button-contact {
+  display: flex;
+  padding: 0;
+  margin-left: 30px;
+  column-gap: 15px;
+}
+
+.footer-contact-info {
+  list-style: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.footer-link-info {
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+.footer-link-info:hover {
+  text-decoration: underline;
+}
+
+.footer-link-info-number {
+  text-decoration: none;
+  color: #1b1c21;
+  font-size: 24px;
+  font-family: "TT Lakes Bold";
+}
+
+.footer-link-info-number:hover {
+  text-decoration: underline;
+}
+
+.footer-language {
+  display: flex;
+  column-gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin-left: 30px;
+}
+
+.footer-contact-info-item {
+  margin: 10px 0;
+}
+
+.button-language {
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+.active-button {
+  color: #7e7e82;
 }
 
 /* Main */
@@ -97,6 +340,12 @@ body {
 .main {
   width: 100%;
   height: 100%;
+}
+
+.main__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .title {
@@ -124,14 +373,18 @@ body {
   background: #41f6d7;
 }
 
-.description {
+.desktop-button-hidden {
+  display: none;
+}
+
+.main__description {
   display: flex;
   flex-direction: column;
   padding: 0;
   margin-bottom: 15px;
 }
 
-.description-text {
+.main__description-text {
   padding: 0 15px;
   margin: 15px 0;
 
@@ -139,15 +392,15 @@ body {
   font-size: clamp(14px, 5vw, 20px);
 }
 
-.description-text-tablet{
+.main__description-text-tablet {
   display: none;
 }
 
-.description-text-desktop{
+.main__description-text-desktop {
   display: none;
 }
 
-.description__read-more {
+.main__description-read-more {
   font-family: "TT Lakes Regular";
   font-size: clamp(14px, 5vw, 16px);
   font-weight: 600;
@@ -157,6 +410,10 @@ body {
   display: flex;
   align-items: center;
   column-gap: 10px;
+}
+
+.main__page-container {
+  width: 100%;
 }
 
 img {
@@ -169,6 +426,7 @@ img {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
+  justify-content: space-between;
 }
 
 .main__scroll-services::-webkit-scrollbar {
@@ -269,7 +527,7 @@ img {
   opacity: 0.8;
 }
 
-.company{
+.company {
   display: flex;
 }
 
@@ -286,6 +544,13 @@ img {
   transition: all 0.6s linear;
   background-color: #41f6d7;
   opacity: 100%;
+}
+
+.main__scroll-brend-item-continer-img {
+  display: flex;
+  align-items: center;
+  width: 128px;
+  height: 38px;
 }
 
 .company {
@@ -319,7 +584,7 @@ img {
   border-bottom: 1px solid #d9fff5;
 }
 
-.nav-scroll {
+.main__nav-scroll {
   display: flex;
   align-self: center;
   justify-content: space-around;

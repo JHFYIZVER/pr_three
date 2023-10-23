@@ -1,78 +1,104 @@
 @media (min-width: 768px) {
   /* Body */
+
   body {
-    max-width: 768px;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Container */
+  .page-container {
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: hidden;
   }
 
   /* Header */
-
-  .header {
-    justify-content: space-between;
-  }
 
   .header__logo {
     order: 2;
   }
 
-  .header__user__info {
-    margin: 0 15px;
-  }
-
   .header__button-hidden {
     display: flex;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ff3e79;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
   }
 
-  .header__button-hidden:active {
-    transform: scale(0.9);
-  }
-
-  .line {
+  .line-hidden {
     display: flex;
   }
 
-  .header__nav {
-    margin: 0 15px;
+  /* Aside */
+
+  .content-active {
+    visibility: visible;
+    overflow: hidden;
+    height: 100vh;
+    opacity: 20%;
+  }
+
+  aside-main-nav{
+    margin-bottom: 50px;
+  }
+  
+  .aside-page{
+    position: absolute;
+  }
+ 
+
+  .aside-active{
+    max-width: 100%;
+    min-height: 100vh;
+
+    z-index: 1;
+    opacity: 1;
+    box-shadow: 0.5px 0px 20px 0px #919191;
+  }
+
+  .cross-active{
+    position: absolute;
   }
 
   /* Main */
 
-  .description {
+  .main__description {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    margin: 0 15px;
+  }
+  .main__description-text {
+    padding: 0;
+  }
+
+  .main__description-text-tablet {
     display: flex;
-    flex-direction: row;
+  }
+
+  .main__page-container {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    max-width: 100%;
   }
 
-
-
-  .description-text-tablet {
-    display: block;
+  .main__scroll-services {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .description__img {
-    flex-basis: 50%;
+  .main__nav-scroll {
+    visibility: hidden;
   }
-
-  .description-text {
-    flex-basis: 50%;
-  }
-
-  /* Scroll */
 
   .main__scroll-brend {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 10px;
   }
 
-  .nav-scroll {
-    display: none;
+  .main__scroll-brend-item {
+    justify-content: center;
+    padding: 0;
   }
 }

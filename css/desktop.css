@@ -1,50 +1,119 @@
-@media (min-width: 1440px){
-  /* Body */
-  body {
-    max-width: 1400px;
+@media (min-width: 1440px) {
+  /* Container */
+
+  .container {
+    display: flex;
+  }
+
+  .page-container {
+    margin: 0 auto;
+  }
+
+  .page-container-content {
+    position: static;
   }
 
   /* Header */
 
   .header {
-   display: none;
+    position: static;
+    visibility: hidden;
+    height: 0;
+  }
+
+  .header__button-setting,
+   header__button-search {
+    visibility: visible;
+  }
+
+  .header__button-text {
+    font-weight: bold;
+    min-width: 130px;
+  }
+
+  .header__label-desktop {
+    margin-top: 70px;
+    padding: 0 10px;
+    display: flex;
+    visibility: visible;
+    align-items: center;
+  }
+
+  .header__button-text {
+    visibility: visible;
+  }
+
+  .header__button-menu {
+    visibility: hidden;
+  }
+
+  .header-logo {
+    margin: 0;
+  }
+
+  /* Aside */
+
+  .page-aside {
+    position: static;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    box-shadow: 0.5px 0px 20px 0px #919191;
+    width: 320px;
+    min-height: 100vmax;
+    overflow-y: hidden;
+    transition: transform 0.5s;
+  }
+
+  .aside-active {
+    opacity: 1;
+    position: fixed;
+    transform: none;
+    min-height: 100vmax;
   }
 
 
-  .header__nav {
-    margin: 0 15px;
+  aside-main-nav{
+    margin-bottom: 50px;
+  }
+
+  .aside-footer {
+    margin-top: 50px;
   }
 
   /* Main */
 
-  .description {
+  .main__scroll-services {
     display: flex;
-    flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap;
   }
 
-
- .description-text-desktop {
-   display: block;
- }
-
-  .description__img {
-    flex-basis: 50%;
+  .main__scroll-item-label {
+    padding: 10px;
   }
 
-  .description-text {
-    flex-basis: 50%;
+  .main__scroll-item {
+    padding: 0 10px;
   }
 
-  /* Scroll */
+  .main__scroll-item-radio-button:checked + .main__scroll-item-label {
+    padding: 10px;
+  }
+
+  .main__description-text-tablet {
+    display: none;
+  }
+
+  .main__description-text-desktop {
+    display: flex;
+  }
 
   .main__scroll-brend {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
-  }
-
-  .nav-scroll {
-    display: none;
+    grid-template-rows: repeat(2, 1fr);
   }
 }
