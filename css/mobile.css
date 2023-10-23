@@ -42,6 +42,7 @@ body {
 
 /* Container */
 
+<<<<<<< HEAD
 .container {
   margin: 0 auto;
   min-width: 320px;
@@ -58,6 +59,10 @@ body {
 
 .page-container-content {
   transition: all 0.5s;
+=======
+.page-container {
+  margin: 0 auto;
+>>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
 }
 
 /* Header */
@@ -76,10 +81,15 @@ body {
 }
 
 .header__user__info {
+  min-width: 160px;
   display: flex;
   align-items: center;
   column-gap: 10px;
+<<<<<<< HEAD
   margin-left: 80px;
+=======
+  margin: 0 20px;
+>>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
 }
 
 .header__nav {
@@ -412,7 +422,11 @@ body {
   column-gap: 10px;
 }
 
+<<<<<<< HEAD
 .main__page-container {
+=======
+.main__page-container{
+>>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
   width: 100%;
 }
 
@@ -470,6 +484,7 @@ img {
   border-top: 1px solid #d9fff5;
   border-bottom: 1px solid #d9fff5;
 }
+
 
 .sub-title {
   font-family: "TT Lakes Regular";
