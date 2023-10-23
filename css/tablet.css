@@ -1,5 +1,4 @@
 @media (min-width: 768px) {
-<<<<<<< HEAD
   /* Body */
 
   body {
@@ -16,13 +15,6 @@
 
   /* Header */
 
-=======
-  /* Container */
-  .page-container {
-    margin: 0 auto;
-  }
-
->>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
   .header__logo {
     order: 2;
   }
@@ -30,7 +22,6 @@
   .header__button-hidden {
     display: flex;
   }
-<<<<<<< HEAD
 
   .line-hidden {
     display: flex;
@@ -65,10 +56,6 @@
 
   .cross-active{
     position: absolute;
-=======
-  .line-hidden {
-    display: flex;
->>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
   }
 
   /* Main */
@@ -82,7 +69,6 @@
     padding: 0;
   }
 
-<<<<<<< HEAD
   .main__description {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -93,8 +79,6 @@
     padding: 0;
   }
 
-=======
->>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
   .main__description-text-tablet {
     display: flex;
   }
@@ -105,22 +89,15 @@
     max-width: 100%;
   }
 
-<<<<<<< HEAD
   .main__scroll-services {
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 
   .main__nav-scroll {
     visibility: hidden;
   }
 
-=======
-  .main__nav-scroll {
-    visibility: hidden;
-  }
-
->>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
   .main__scroll-brend {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

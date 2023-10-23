@@ -1,6 +1,5 @@
 @media (min-width: 1440px) {
   /* Container */
-<<<<<<< HEAD
 
   .container {
     display: flex;
@@ -12,16 +11,11 @@
 
   .page-container-content {
     position: static;
-=======
-  .page-container {
-    margin: 0 auto;
->>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
   }
 
   /* Header */
 
   .header {
-<<<<<<< HEAD
     position: static;
     visibility: hidden;
     height: 0;
@@ -79,32 +73,23 @@
     position: fixed;
     transform: none;
     min-height: 100vmax;
-=======
-    visibility: hidden;
->>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
   }
 
   .header__button-hidden {
     display: none;
   }
 
-<<<<<<< HEAD
   aside-main-nav{
     margin-bottom: 50px;
   }
 
   .aside-footer {
     margin-top: 50px;
-=======
-  .line-hidden {
-    display: none;
->>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
   }
 
   /* Main */
 
   .main__scroll-services {
-<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
@@ -122,11 +107,6 @@
     padding: 10px;
   }
 
-=======
-    justify-content: space-evenly;
-  }
-
->>>>>>> 5668b3da88fa6edf145ab8e10d6b45fddd53b570
   .main__description-text-tablet {
     display: none;
   }
