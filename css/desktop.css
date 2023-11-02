@@ -107,16 +107,13 @@
     padding: 10px;
   }
 
-  .main__description-text-tablet {
-    display: none;
-  }
-
-  .main__description-text-desktop {
-    display: flex;
-  }
-
-  .main__scroll-brend {
+  .main__swiper-brend-wrapper {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  .item-7,
+  .item-8 {
+    visibility: visible;
   }
 }

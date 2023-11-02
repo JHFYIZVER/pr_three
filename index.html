@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
     <link rel="stylesheet" href="./css/menu.css" />
+    <script defer src="./script/swiper.min.js"></script>
+    <script defer src="./script/script.js"></script>
     <title>CPS</title>
   </head>
   <body>
@@ -256,30 +259,24 @@
           </div>
           <div class="main__description">
             <div class="main__description-text">
-              <p class="main__description-text-mobile">
+              <p id="short-text" class="main__description-text-mobile">
                 Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
                 официальной гарантией производителя.
               </p>
-              <p class="main__description-text-tablet">
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера
-              </p>
-              <p class="main__description-text-desktop">
+              <p id="full-text" class="main__description-text-desktop">
                 Мы успешно работаем с 1992 года и заслужили репутацию надежного
                 партнера, что подтверждает большое количество постоянных
                 клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
                 и, в свою очередь, советуют нас родным и близким.
               </p>
-              <div class="main__description-read-more">
-                <img
-                  src="./img/arrow.svg"
-                  alt=""
-                  aria-hidden="true"
-                  width="8"
-                  height="11"
-                />
-                <span>Читать далее</span>
+              <div id="icon-read-more" class="main__description-read-more">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+                <button id="read-more">Читать далее</button>
               </div>
             </div>
             <div class="main__page-container">
@@ -290,286 +287,168 @@
             <div class="main__sub-title">
               <h2 class="sub-title">Ремонт техники различных брендов</h2>
             </div>
-            <div class="main__scroll-brend">
-              <div class="main__scroll-brend-item brend-item-1">
-                <input
-                  class="main__scroll-brend-item-radio-button"
-                  type="radio"
-                  id="lenovo"
-                  name="brend"
-                  checked
-                />
-                <label for="lenovo" class="company">
+            <div class="swiper main__swiper-brend">
+              <div
+                id="brend-wrapper"
+                class="swiper-wrapper main__swiper-brend-wrapper"
+              >
+                <button class="swiper-slide swiper-brend-item item-1">
                   <img
+                    class="company"
                     src="./img/Lenovo.png"
                     width="128px"
                     height="38px"
                     alt=""
                   />
                   <img
+                    class="icon-go"
                     src="./img/icon-go.svg"
                     alt=""
                     aria-hidden="true"
                     width="40"
                     height="40"
                   />
-                </label>
-              </div>
-              <div class="main__scroll-brend-item brend-item-2">
-                <input
-                  class="main__scroll-brend-item-radio-button"
-                  type="radio"
-                  id="samsung"
-                  name="brend"
-                  checked
-                />
-                <label for="samsung" class="company">
+                </button>
+                <button class="swiper-slide swiper-brend-item item-2">
                   <img
+                    class="company"
                     src="./img/Samsung.png"
                     width="128px"
                     height="38px"
                     alt=""
                   />
                   <img
+                    class="icon-go"
                     src="./img/icon-go.svg"
                     alt=""
                     aria-hidden="true"
                     width="40"
                     height="40"
                   />
-                </label>
-              </div>
-              <div class="main__scroll-brend-item brend-item-3">
-                <input
-                  class="main__scroll-brend-item-radio-button"
-                  type="radio"
-                  id="apple"
-                  name="brend"
-                  checked
-                />
-                <label for="apple" class="company">
-                  <div class="main__scroll-brend-item-continer-img">
-                    <img
-                      src="./img/Apple.png"
-                      width="44px"
-                      height="44px"
-                      alt=""
-                    />
-                  </div>
+                </button>
+                <button class="swiper-slide swiper-brend-item item-3">
                   <img
+                    class="company"
+                    src="./img/Apple.png"
+                    width="44px"
+                    height="44px"
+                    alt=""
+                  />
+                  <img
+                    class="icon-go"
                     src="./img/icon-go.svg"
                     alt=""
                     aria-hidden="true"
                     width="40"
                     height="40"
                   />
-                </label>
-              </div>
-              <div class="main__scroll-brend-item brend-item-4">
-                <input
-                  class="main__scroll-brend-item-radio-button"
-                  type="radio"
-                  id="bosch"
-                  name="brend"
-                  checked
-                />
-                <label for="bosch" class="company">
+                </button>
+                <button class="swiper-slide swiper-brend-item item-4">
                   <img
+                    class="company"
                     src="./img/Bosch.png"
                     width="128px"
                     height="38px"
                     alt=""
                   />
                   <img
+                    class="icon-go"
                     src="./img/icon-go.svg"
                     alt=""
                     aria-hidden="true"
                     width="40"
                     height="40"
                   />
-                </label>
-              </div>
-              <div class="main__scroll-brend-item brend-item-5">
-                <input
-                  class="main__scroll-brend-item-radio-button"
-                  type="radio"
-                  id="hp"
-                  name="brend"
-                  checked
-                />
-                <label for="hp" class="company">
-                  <div class="main__scroll-brend-item-continer-img">
-                    <img src="./img/Hp.png" width="52px" height="52px" alt="" />
-                  </div>
+                </button>
+                <button class="swiper-slide swiper-brend-item item-5">
                   <img
+                    class="company"
+                    src="./img/Hp.png"
+                    width="52px"
+                    height="52px"
+                    alt=""
+                  />
+                  <img
+                    class="icon-go"
                     src="./img/icon-go.svg"
                     alt=""
                     aria-hidden="true"
                     width="40"
                     height="40"
                   />
-                </label>
-              </div>
-              <div class="main__scroll-brend-item brend-item-6">
-                <input
-                  class="main__scroll-brend-item-radio-button"
-                  type="radio"
-                  id="acer"
-                  name="brend"
-                  checked
-                />
-                <label for="acer" class="company">
+                </button>
+                <button class="swiper-slide swiper-brend-item item-6">
                   <img
+                    class="company"
                     src="./img/Acer.png"
                     width="128px"
                     height="38px"
                     alt=""
                   />
                   <img
+                    class="icon-go"
                     src="./img/icon-go.svg"
                     alt=""
                     aria-hidden="true"
                     width="40"
                     height="40"
                   />
-                </label>
-              </div>
-              <div class="main__scroll-brend-item brend-item-7">
-                <input
-                  class="main__scroll-brend-item-radio-button"
-                  type="radio"
-                  id="view_sonic"
-                  name="brend"
-                  checked
-                />
-                <label for="view_sonic" class="company">
+                </button>
+                <button
+                  id="item-7"
+                  class="swiper-slide swiper-brend-item item-7"
+                >
                   <img
+                    class="company"
                     src="./img/ViewSonic.png"
                     width="128px"
                     height="38px"
                     alt=""
                   />
                   <img
+                    class="icon-go"
                     src="./img/icon-go.svg"
                     alt=""
                     aria-hidden="true"
                     width="40"
                     height="40"
                   />
-                </label>
-              </div>
-              <div class="main__scroll-brend-item brend-item-8">
-                <input
-                  class="main__scroll-brend-item-radio-button"
-                  type="radio"
-                  id="sony"
-                  name="brend"
-                  checked
-                />
-                <label for="sony" class="company">
+                </button>
+                <button
+                  id="item-8"
+                  class="swiper-slide swiper-brend-item item-8"
+                >
                   <img
+                    class="company"
                     src="./img/Sony.png"
                     width="128px"
                     height="38px"
                     alt=""
                   />
                   <img
+                    class="icon-go"
                     src="./img/icon-go.svg"
                     alt=""
                     aria-hidden="true"
                     width="40"
                     height="40"
                   />
-                </label>
+                </button>
               </div>
             </div>
-            <div class="main__nav-scroll">
-              <label for="lenovo" class="main__scroll-brend-item-label"></label>
-              <label
-                for="samsung"
-                class="main__scroll-brend-item-label"
-              ></label>
-              <label for="apple" class="main__scroll-brend-item-label"></label>
-              <label for="bosch" class="main__scroll-brend-item-label"></label>
-              <label for="hp" class="main__scroll-brend-item-label"></label>
-              <label for="acer" class="main__scroll-brend-item-label"></label>
-              <label
-                for="view_sonic"
-                class="main__scroll-brend-item-label"
-              ></label>
-              <label for="sony" class="main__scroll-brend-item-label"></label>
-            </div>
-          </div>
-          <div class="main__repair__types">
-            <h2 class="sub-title">Ремонт различных видов техники</h2>
-            <div class="main__scroll-types">
-              <input type="radio" name="types" id="t1" checked />
-              <input type="radio" name="types" id="t2" />
-              <input type="radio" name="types" id="t3" />
-              <input type="radio" name="types" id="t4" />
-              <input type="radio" name="types" id="t5" />
-              <input type="radio" name="types" id="t6" />
-              <input type="radio" name="types" id="t7" />
-              <input type="radio" name="types" id="t8" />
+            <div id="show-all" class="main__brand-show-all">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
 
-              <button class="name-types">
-                <span>Ремонт ноутбуков</span>
-                <img
-                  class="icon-item"
-                  src="./img/icon-go.svg"
-                  alt=""
-                  aria-hidden="true"
-                  width="40"
-                  height="40"
-                />
-              </button>
-              <button class="name-types">
-                <span>Ремонт планшетов</span>
-                <img
-                  class="icon-item"
-                  src="./img/icon-go.svg"
-                  alt=""
-                  aria-hidden="true"
-                  width="40"
-                  height="40"
-                />
-              </button>
-              <button class="name-types">
-                <span>Ремонт ПК</span>
-                <img
-                  class="icon-item"
-                  src="./img/icon-go.svg"
-                  alt=""
-                  aria-hidden="true"
-                  width="40"
-                  height="40"
-                />
-              </button>
-              <button class="name-types">
-                <span>Ремонт мониторов</span>
-                <img
-                  class="icon-item"
-                  src="./img/icon-go.svg"
-                  alt=""
-                  aria-hidden="true"
-                  width="40"
-                  height="40"
-                />
-              </button>
+              <button id="btn-show-all">Показать все</button>
             </div>
-            <div class="nav-scroll">
-              <label for="t1" class="bar"></label>
-              <label for="t2" class="bar"></label>
-              <label for="t3" class="bar"></label>
-              <label for="t4" class="bar"></label>
-              <label for="t5" class="bar"></label>
-              <label for="t6" class="bar"></label>
-              <label for="t7" class="bar"></label>
-              <label for="t8" class="bar"></label>
+            <div class="main__nav-pagination">
+              <div class="swiper-pagination brands__swiper-pagination"></div>
             </div>
           </div>
         </main>
-        <script src="./script/script.js"></script>
       </div>
     </div>
   </body>
