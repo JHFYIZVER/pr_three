@@ -474,6 +474,7 @@ body {
   background: none;
   border: none;
   transition: all 0.3s;
+  color: #000;
 }
 
 #read-more:hover {
