@@ -30,6 +30,10 @@
     font-weight: bold;
     min-width: 130px;
   }
+  
+  .header__button-text:hover{
+    cursor: pointer;
+  }
 
   .header__label-desktop {
     margin-top: 70px;
@@ -63,7 +67,7 @@
     background-color: #fff;
     box-shadow: 0.5px 0px 20px 0px #919191;
     width: 320px;
-    min-height: 100vmax;
+    min-height: 100vh;
     overflow-y: hidden;
     transition: transform 0.5s;
   }
@@ -114,6 +118,6 @@
 
   .item-7,
   .item-8 {
-    visibility: visible;
+    display: flex;
   }
 }
