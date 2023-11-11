@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./img/icons8-с-16.png" type="image/x-icon">
+    <link rel="icon" href="./img/icons8-с-16.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
@@ -193,71 +193,76 @@
         </header>
 
         <main class="main">
-          <div class="main__title">
-            <h1 class="title">Услуги и сервисы</h1>
-          </div>
-          <div class="main__scroll-services">
-            <div class="main__scroll-item">
-              <input
-                class="main__scroll-item-radio-button"
-                type="radio"
-                id="repairable_devices"
-                name="selector"
-                checked
-              />
-              <label for="repairable_devices" class="main__scroll-item-label">
-                <span>Ремонтируемые устройства</span>
-              </label>
+          <section>
+            <div class="main__title">
+              <h1 class="title">Услуги и сервисы</h1>
             </div>
-            <div class="main__scroll-item">
-              <input
-                class="main__scroll-item-radio-button"
-                type="radio"
-                id="additional_services"
-                name="selector"
-                checked
-              />
-              <label for="additional_services" class="main__scroll-item-label">
-                <span>Дополнительные услуги</span>
-              </label>
+            <div class="main__scroll-services">
+              <div class="main__scroll-item">
+                <input
+                  class="main__scroll-item-radio-button"
+                  type="radio"
+                  id="repairable_devices"
+                  name="selector"
+                  checked
+                />
+                <label for="repairable_devices" class="main__scroll-item-label">
+                  <span>Ремонтируемые устройства</span>
+                </label>
+              </div>
+              <div class="main__scroll-item">
+                <input
+                  class="main__scroll-item-radio-button"
+                  type="radio"
+                  id="additional_services"
+                  name="selector"
+                  checked
+                />
+                <label
+                  for="additional_services"
+                  class="main__scroll-item-label"
+                >
+                  <span>Дополнительные услуги</span>
+                </label>
+              </div>
+              <div class="main__scroll-item">
+                <input
+                  class="main__scroll-item-radio-button"
+                  type="radio"
+                  id="prices_services"
+                  name="selector"
+                  checked
+                />
+                <label for="prices_services" class="main__scroll-item-label">
+                  <span>Цены на услуги</span>
+                </label>
+              </div>
+              <div class="main__scroll-item">
+                <input
+                  class="main__scroll-item-radio-button"
+                  type="radio"
+                  id="addresses_center"
+                  name="selector"
+                  checked
+                />
+                <label for="addresses_center" class="main__scroll-item-label">
+                  <span>Адреса сервисных центров</span>
+                </label>
+              </div>
+              <div class="main__scroll-item">
+                <input
+                  class="main__scroll-item-radio-button"
+                  type="radio"
+                  id="special_prices"
+                  name="selector"
+                  checked
+                />
+                <label for="special_prices" class="main__scroll-item-label">
+                  <span>Специальные цены</span>
+                </label>
+              </div>
             </div>
-            <div class="main__scroll-item">
-              <input
-                class="main__scroll-item-radio-button"
-                type="radio"
-                id="prices_services"
-                name="selector"
-                checked
-              />
-              <label for="prices_services" class="main__scroll-item-label">
-                <span>Цены на услуги</span>
-              </label>
-            </div>
-            <div class="main__scroll-item">
-              <input
-                class="main__scroll-item-radio-button"
-                type="radio"
-                id="addresses_center"
-                name="selector"
-                checked
-              />
-              <label for="addresses_center" class="main__scroll-item-label">
-                <span>Адреса сервисных центров</span>
-              </label>
-            </div>
-            <div class="main__scroll-item">
-              <input
-                class="main__scroll-item-radio-button"
-                type="radio"
-                id="special_prices"
-                name="selector"
-                checked
-              />
-              <label for="special_prices" class="main__scroll-item-label">
-                <span>Специальные цены</span>
-              </label>
-            </div>
-          </div>
+          </section>
           <div class="main__description">
             <div class="main__description-text">
               <p id="short-text" class="main__description-text-mobile">
@@ -284,7 +289,7 @@
               <img src="./img/cps.png" alt="" />
             </div>
           </div>
-          <div class="main__brend">
+          <section class="main__brend">
             <div class="main__sub-title">
               <h2 class="sub-title">Ремонт техники различных брендов</h2>
             </div>
@@ -445,11 +450,119 @@
 
               <button id="btn-show-all">Показать все</button>
             </div>
-            <div class="main__nav-pagination">
-              <div class="swiper-pagination brands__swiper-pagination"></div>
+            <div class="swiper-pagination brands__swiper-pagination"></div>
+          </section>
+          <section class="main__repair-brend">
+            <div class="main__sub-title">
+              <h2 class="sub-title">Ремонт различных видов техники</h2>
             </div>
-          </div>
+            <div class="swiper main__swiper-repair">
+              <div
+                id="brend-wrapper"
+                class="swiper-wrapper main__swiper-repair-wrapper"
+              >
+                <button class="swiper-slide swiper-repair-item repair-item-1">
+                  <div class="repair-text">Ремонт ноутбуков</div>
+                  <img
+                    class="icon-go"
+                    src="./img/icon-go.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                  />
+                </button>
+                <button class="swiper-slide swiper-repair-item repair-item-2">
+                  <div class="repair-text">Ремонт планшетов</div>
+                  <img
+                    class="icon-go"
+                    src="./img/icon-go.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                  />
+                </button>
+                <button class="swiper-slide swiper-repair-item repair-item-3">
+                  <div class="repair-text">Ремонт ПК</div>
+                  <img
+                    class="icon-go"
+                    src="./img/icon-go.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                  />
+                </button>
+                <button class="swiper-slide swiper-repair-item repair-item-4">
+                  <div class="repair-text">Ремонт мониторов</div>
+                  <img
+                    class="icon-go"
+                    src="./img/icon-go.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                  />
+                </button>
+                <button class="swiper-slide swiper-repair-item repair-item-5">
+                  <div class="repair-text">Ремонт телевизоров</div>
+                  <img
+                    class="icon-go"
+                    src="./img/icon-go.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                  />
+                </button>
+                <button class="swiper-slide swiper-repair-item repair-item-6">
+                  <div class="repair-text">Ремонт тостеров</div>
+                  <img
+                    class="icon-go"
+                    src="./img/icon-go.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                  />
+                </button>
+                <button class="swiper-slide swiper-repair-item repair-item-7">
+                  <div class="repair-text">Ремонт пылесосов</div>
+                  <img
+                    class="icon-go"
+                    src="./img/icon-go.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                  />
+                </button>
+                <button class="swiper-slide swiper-repair-item repair-item-8">
+                  <div class="repair-text">Ремонт камер</div>
+                  <img
+                    class="icon-go"
+                    src="./img/icon-go.svg"
+                    alt=""
+                    aria-hidden="true"
+                    width="40"
+                    height="40"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="swiper-pagination repair__swiper-pagination"></div>
+            <div id="show-all" class="main__brand-show-all">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <button id="btn-show-all">Показать все</button>
+            </div>
+          </section>
         </main>
+        <footer></footer>
       </div>
     </div>
   </body>

@@ -395,7 +395,7 @@ body {
   font-size: clamp(14px, 5vw, 20px);
 }
 
-.main__description-text-mobile{
+.main__description-text-mobile {
   margin: 0;
 }
 
@@ -527,7 +527,7 @@ img {
   margin: 15px 0;
 }
 
-.main__scroll-item-label:hover{
+.main__scroll-item-label:hover {
   cursor: pointer;
 }
 
@@ -600,16 +600,12 @@ img {
   border-bottom: 1px solid #d9fff5;
 }
 
-.brands__swiper-pagination {
+.swiper-pagination {
   position: static;
   display: flex;
   align-self: center;
   justify-content: center;
   margin: 15px 0;
-}
-
-.swiper-slide-active {
-  border: 1px solid #41f6d7;
 }
 
 /* Company */
@@ -630,4 +626,36 @@ img {
   display: none;
 }
 
+/* Repair-brend */
 
+.main__repair-brend {
+  padding: 0 15px;
+  border-top: 1px solid #d9fff5;
+  border-bottom: 1px solid #d9fff5;
+}
+
+.swiper-repair-item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  justify-items: end;
+
+  max-width: 240px;
+  min-height: 160px;
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  background: #fff;
+  padding: 10px;
+}
+
+.repair-text {
+  justify-self: start;
+  font-family: "TT Lakes Regular";
+  font-size: clamp(16px, 5vw, 20px);
+  color: #000000;
+  font-weight: 700;
+}
+
+.swiper-slide-active {
+  border: 1px solid #41f6d7;
+}

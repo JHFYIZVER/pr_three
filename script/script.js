@@ -134,7 +134,7 @@ for (let i = 0; i < brendItem.length; i++) {
 
 /* Swiper */
 
-const swiper = new Swiper(".main__swiper-brend", {
+const brendSwiper = new Swiper(".main__swiper-brend", {
   slidesPerView: "auto",
   spaceBetween: 16,
   observer: true,
@@ -145,12 +145,28 @@ const swiper = new Swiper(".main__swiper-brend", {
     },
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".brands__swiper-pagination",
     clickable: true,
     type: "bullets",
   },
 });
 
 
+const repairSwiper = new Swiper(".main__swiper-repair", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  observer: true,
+  breakpoints: {
+    768: {
+      spaceBetween: 0,
+      enabled: false,
+    },
+  },
+  pagination: {
+    el: ".repair__swiper-pagination",
+    clickable: true,
+    type: "bullets",
+  },
+});
 
 

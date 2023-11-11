@@ -103,7 +103,7 @@
     transition: all 0.3s;
   }
 
-  /* Swiper */
+  /* Swiper-brend */
 
   .swiper-slide-active {
     border: 1px solid #eaeaea;
@@ -113,7 +113,7 @@
     border: 1px solid #41f6d7;
   }
 
-  .main__nav-pagination {
+  .swiper-pagination {
     display: none;
   }
 
@@ -124,6 +124,16 @@
     margin: 0;
   }
 
+  /* Swiper-repair */
+
+  .main__swiper-repair-wrapper{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+  }
 
   /* Show-all */
 
