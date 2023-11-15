@@ -663,3 +663,6 @@ img {
   border: 1px solid #41f6d7;
 }
 
+.main__repair-show-all{
+  display: none;
+}
