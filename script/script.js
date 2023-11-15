@@ -55,6 +55,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("content").addEventListener("click", () => {
+    document.getElementById("content").classList.remove("content-active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("content").addEventListener("click", () => {
+    document.getElementById("menu").classList.remove("aside-active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("content").addEventListener("click", () => {
+    document.getElementById("header__menu").classList.remove("cross-active");
+  });
+});
+
 /* Text read-more */
 
 const readMore = document.getElementById("read-more");
@@ -62,6 +80,12 @@ const readMore = document.getElementById("read-more");
 document.addEventListener("DOMContentLoaded", () => {
   readMore.addEventListener("click", () => {
     document.getElementById("full-text").classList.toggle("full-text-active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  readMore.addEventListener("click", () => {
+    document.getElementById("icon-read-more").classList.toggle("icon-read-more-active");
   });
 });
 
@@ -95,28 +119,39 @@ showAll.addEventListener("click", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   showAll.addEventListener("click", () => {
+    document.getElementById("brend-wrapper").classList.toggle("main__swiper-brend-wrapper-active");
+  });
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  showAll.addEventListener("click", () => {
     document.getElementById("show-all").classList.toggle("main__brand-show-all-active");
   });
 });
 
+/* Repair */
+
+const showAllRepair = document.getElementById("btn-show-all-repair");
+
+showAllRepair.addEventListener("click", () => {
+  if (showAllRepair.innerText === "Показать все"){
+    showAllRepair.innerText = "Скрыть"
+  } else {
+    showAllRepair.innerText = "Показать все"
+  };
+})
+
 
 document.addEventListener("DOMContentLoaded", () => {
-  showAll.addEventListener("click", () => {
-    document.getElementById("item-7").classList.toggle("item-7-active");
+  showAllRepair.addEventListener("click", () => {
+    document.getElementById("show-all-repair").classList.toggle("main__repair-show-all-active");
   });
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  showAll.addEventListener("click", () => {
-    document.getElementById("item-8").classList.toggle("item-8-active");
-  });
-});
-
-
 
 document.addEventListener("DOMContentLoaded", () => {
-  showAll.addEventListener("click", () => {
-    document.getElementById("brend-wrapper").classList.toggle("main__swiper-brend-wrapper-active");
+  showAllRepair.addEventListener("click", () => {
+    document.getElementById("repair-wrapper").classList.toggle("main__swiper-repair-wrapper-active");
   });
 });
 
@@ -131,6 +166,13 @@ for (let i = 0; i < brendItem.length; i++) {
     brendItem[i].classList.add("swiper-brend-item-active");
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  showAllRepair.addEventListener("click", () => {
+    document.getElementById("brend-wrapper").classList.toggle("brend-wrapper-active");
+  });
+});
+
 
 /* Swiper */
 

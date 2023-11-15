@@ -15,12 +15,20 @@
 
   /* Header */
 
+  .header {
+    position: static;
+  }
+
   .header__logo {
     order: 2;
   }
 
   .header__button-hidden {
     display: flex;
+  }
+
+  .header-button-menu {
+    position: absolute;
   }
 
   .line-hidden {
@@ -87,13 +95,14 @@
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 10px;
+    max-height: 220px;
+    overflow: hidden;
   }
 
   .main__swiper-brend-wrapper-active {
-    grid-template-rows: repeat(3, 1fr);
+    max-height: none;
   }
 
   #btn-show-all {
@@ -126,13 +135,19 @@
 
   /* Swiper-repair */
 
-  .main__swiper-repair-wrapper{
+  .main__swiper-repair-wrapper {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-auto-rows: minmax(100px, auto);
     grid-gap: 10px;
+    max-height: 170px;
+    overflow: hidden;
+  }
+
+  .main__swiper-repair-wrapper-active{
+    max-height: none;
   }
 
   /* Show-all */
@@ -214,22 +229,102 @@
     color: #a0a0a0;
     cursor: pointer;
   }
-  
+
   #btn-show-all:active {
     transition: all 0.3s;
     transform: scale(0.9);
   }
 
-  .item-7,
-  .item-8 {
-    display: none;
+  /* Repair */
+
+  #btn-show-all-repair {
+    font-size: clamp(14px, 5vw, 16px);
+    background: none;
+    border: none;
+    transition: all 0.3s;
   }
 
-  .item-7-active {
-    display: flex;
+  #btn-show-all-repair:hover {
+    transition: all 0.3s;
+    color: #a0a0a0;
+    cursor: pointer;
   }
 
-  .item-8-active {
-    display: flex;
+  #btn-show-all-repair:active {
+    transition: all 0.3s;
+    transform: scale(0.9);
   }
+
+  .main__repair-show-all {
+    position: relative;
+
+    font-family: "TT Lakes Regular";
+    font-size: clamp(14px, 5vw, 16px);
+    font-weight: 600;
+
+    margin: 15px 0;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .main__repair-show-all span {
+    left: 0;
+    width: 8px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #41f6d7;
+    position: absolute;
+    transition: all 0.5s;
+  }
+
+  .main__repair-show-all span:nth-child(1) {
+    transform: rotate(45deg);
+    transition: all 0.5s;
+  }
+
+  .main__repair-show-all span:nth-child(2) {
+    left: 4.5px;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+  }
+
+  .main__repair-show-all span:nth-child(3) {
+    top: 15px;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+  }
+
+  .main__repair-show-all span:nth-child(4) {
+    top: 15px;
+    left: 4.5px;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+  }
+
+  .main__repair-show-all-active span:nth-child(1) {
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+  }
+
+  .main__repair-show-all-active span:nth-child(2) {
+    left: 4.5px;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+  }
+
+  .main__repair-show-all-active span:nth-child(3) {
+    top: 15px;
+    transform: rotate(-45deg);
+    transition: all 0.5s;
+  }
+
+  .main__repair-show-all-active span:nth-child(4) {
+    top: 15px;
+    left: 4.5;
+    transform: rotate(45deg);
+    transition: all 0.5s;
+  }
+
 }
