@@ -229,6 +229,10 @@ document.getElementById("content").addEventListener("click", () => {
   document.getElementById("feedback").classList.remove("modal-feedback-active");
 });
 
+document.getElementsByClassName("chat")[0].addEventListener("click", () => {
+  document.getElementById("content").classList.toggle("content-active");
+});
+
 document.getElementsByClassName("chat")[1].addEventListener("click", () => {
   document.getElementById("content").classList.toggle("content-active");
 });
@@ -290,11 +294,6 @@ for (let i = 0; i < chatButton.length; i++) {
   });
 }
 
-for (let i = 0; i < chatButton.length; i++) {
-  chatButton[i].addEventListener("click", () => {
-    document.getElementById("content").classList.toggle("content-active");
-  });
-}
 
 closeButtonFeedback.addEventListener("click", () => {
   document.getElementById("content").classList.remove("content-active");
@@ -309,6 +308,10 @@ for (let i = 0; i < callButton.length; i++) {
     document.getElementById("call").classList.toggle("modal-call-active");
   });
 }
+
+document.querySelectorAll(".call")[0].addEventListener("click", () => {
+  document.getElementById("content").classList.toggle("content-active");
+});
 
 document.querySelectorAll(".call")[1].addEventListener("click", () => {
   document.getElementById("content").classList.toggle("content-active");
@@ -366,12 +369,6 @@ closeButtonCall.addEventListener("click", () => {
 for (let i = 0; i < callButton.length; i++) {
   callButton[i].addEventListener("click", () => {
     document.getElementById("header__menu").classList.add("menu-btn-active");
-  });
-}
-
-for (let i = 0; i < callButton.length; i++) {
-  callButton[i].addEventListener("click", () => {
-    document.getElementById("content").classList.toggle("content-active");
   });
 }
 
