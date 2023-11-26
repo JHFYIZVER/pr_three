@@ -137,7 +137,7 @@ body {
 
 /* Call-btn */
 
-.call-button-header{
+.call-button-header {
   top: 20px;
   right: 233px;
   z-index: 99;
@@ -147,7 +147,7 @@ body {
 
 /* Chat-btn */
 
-.chat-button-header{
+.chat-button-header {
   top: 20px;
   right: 183px;
   z-index: 99;
@@ -165,7 +165,7 @@ body {
   visibility: visible;
 }
 
-.menu-btn-active{
+.menu-btn-active {
   opacity: 20%;
 }
 
@@ -196,7 +196,6 @@ body {
   width: 18px;
   transition: all 0.5s;
 }
-
 
 .cross-active span:nth-child(1) {
   transform: translateY(0) rotate(45deg);
@@ -688,10 +687,6 @@ img {
   font-weight: 700;
 }
 
-.swiper-slide-active {
-  border: 1px solid #41f6d7;
-}
-
 .main__repair-show-all {
   display: none;
 }
@@ -771,7 +766,7 @@ img {
   max-width: 470px;
 }
 
-.give-more{
+.give-more {
   margin-top: 16px;
   color: #1b1c21;
   font-weight: 600;
@@ -780,36 +775,34 @@ img {
   flex-direction: row;
   align-items: center;
   position: relative;
-  max-width: 300px;
+  max-width: 200px;
 }
 
-.give-more span{
+.give-more span {
   position: absolute;
   right: 0;
   height: 10px;
   width: 2px;
-  background-color: #FF3E79;
+  background-color: #ff3e79;
   border-radius: 6px;
   margin-left: 20px;
 }
 
-
-.give-more span:nth-child(1){
-  right: -10px;
-  top: 10px;
+.give-more span:nth-child(1) {
+  left: 95px;
+  bottom: 3px;
   transform: rotate(45deg);
 }
 
-.give-more span:nth-child(2){
-  right: -10px;
-  bottom: 10px;
+.give-more span:nth-child(2) {
+  left: 95px;
+  top: 29px;
   transform: rotate(-45deg);
 }
 
-
 /* Modal-Feedback */
 
-.modal-feedback{
+.modal-feedback {
   z-index: 1;
   position: absolute;
   overflow: auto;
@@ -817,13 +810,12 @@ img {
   top: 0;
   display: flex;
   flex-direction: column;
-  
+
   background-color: #fff;
   width: 320px;
   min-height: 100vh;
   transition: transform 0.5s;
 }
-
 
 .modal-feedback-active {
   z-index: 1000;
@@ -838,7 +830,7 @@ img {
   margin: 24px 0 0 16px;
 }
 
-.button-feedback span{
+.button-feedback span {
   position: absolute;
   width: 3px;
   height: 20px;
@@ -847,61 +839,60 @@ img {
   transition: all 0.5s;
 }
 
-.button-feedback span:nth-child(1){
+.button-feedback span:nth-child(1) {
   transform: rotate(45deg);
   transition: all 0.5s;
 }
 
-.button-feedback span:nth-child(2){
+.button-feedback span:nth-child(2) {
   transform: rotate(-45deg);
   transition: all 0.5s;
 }
 
-.title-feedback{
+.title-feedback {
   font-size: 24px;
 }
 
-.feedback-form{
+.feedback-form {
   font-family: "TT Lakes Regular";
   margin: 16px;
   display: flex;
   flex-direction: column;
-  
 }
 
-.feedback-form-item{
+.feedback-form-item {
   border-radius: 8px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   max-width: 376px;
   height: 48px;
   padding: 10px;
   margin: 8px 0;
 }
 
-.feedback-form-item:focus{
+.feedback-form-item:focus {
   border: 1px solid #d4d4d4;
   outline: none;
 }
 
-.feedback-textarea{
+.feedback-textarea {
   max-width: 376px;
   height: 118px;
   resize: none;
 }
 
-.feedback-footer-text{
+.feedback-footer-text {
   width: 288px;
   margin: 0 16px;
   font-size: 14px;
 }
 
-.feedback-order-button{
+.feedback-order-button {
   cursor: pointer;
   color: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   background: #ff3e79;
   width: 119px;
   height: 32px;
@@ -910,25 +901,24 @@ img {
   transition: all 0.3s ease;
 }
 
-.feedback-order-button:hover{
+.feedback-order-button:hover {
   background: #ff2667;
   transition: all 0.3s ease;
 }
 
-.footer-feedback{
+.footer-feedback {
   display: grid;
 }
 
-.feedback-order-button{
+.feedback-order-button {
   font-weight: 700;
   justify-self: end;
   margin-right: 32px;
 }
 
-
 /* Modal-Call */
 
-.modal-call{
+.modal-call {
   z-index: 1;
   position: absolute;
   overflow: auto;
@@ -936,13 +926,12 @@ img {
   top: 0;
   display: flex;
   flex-direction: column;
-  
+
   background-color: #fff;
   width: 320px;
   min-height: 100vh;
   transition: transform 0.5s;
 }
-
 
 .modal-call-active {
   z-index: 1000;
@@ -957,7 +946,7 @@ img {
   margin: 24px 0 0 16px;
 }
 
-.button-call span{
+.button-call span {
   position: absolute;
   width: 3px;
   height: 20px;
@@ -966,44 +955,43 @@ img {
   transition: all 0.5s;
 }
 
-.button-call span:nth-child(1){
+.button-call span:nth-child(1) {
   transform: rotate(45deg);
   transition: all 0.5s;
 }
 
-.button-call span:nth-child(2){
+.button-call span:nth-child(2) {
   transform: rotate(-45deg);
   transition: all 0.5s;
 }
 
-.title-call{
+.title-call {
   font-size: 24px;
 }
 
-.call-form{
+.call-form {
   font-family: "TT Lakes Regular";
   margin: 16px;
   display: flex;
   flex-direction: column;
-  
 }
 
-.call-form-item{
+.call-form-item {
   border-radius: 8px;
-  border: 1px solid #EAEAEA;
+  border: 1px solid #eaeaea;
   max-width: 376px;
   height: 48px;
   padding: 10px;
   margin: 8px 0;
 }
 
-.call-order-button{
+.call-order-button {
   cursor: pointer;
   color: #eee;
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   background: #ff3e79;
   width: 119px;
   height: 32px;
@@ -1012,27 +1000,26 @@ img {
   transition: all 0.3s ease;
 }
 
-.call-form-item:focus{
+.call-form-item:focus {
   border: 1px solid #d4d4d4;
   outline: none;
 }
 
-.call-footer-text{
+.call-footer-text {
   width: 288px;
   margin: 16px;
   font-size: 14px;
 }
 
-.footer-call{
+.footer-call {
   display: grid;
 }
 
-.call-order-button{
+.call-order-button {
   font-weight: 700;
   margin-right: 32px;
   justify-self: end;
 }
-
 
 /* footer */
 
@@ -1049,4 +1036,10 @@ img {
   text-align: center;
   font-size: 14px;
   margin: 8px 0;
+}
+
+/* !!swiper-slide */
+
+.swiper-slide-active {
+  border: 1px solid #41f6d7;
 }

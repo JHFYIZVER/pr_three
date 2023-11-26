@@ -121,6 +121,20 @@
     transition: all 0.3s;
   }
 
+  .give-more{
+    max-width: 300px;
+  }
+
+  .give-more span:nth-child(1){
+    left: 290px;
+    top: 11px;
+  }
+  
+  .give-more span:nth-child(2){
+    left: 290px;
+    top: 5px;
+  }
+
   /* Swiper-brend */
 
   .swiper-slide-active {
