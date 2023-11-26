@@ -271,6 +271,10 @@ closeButtonFeedback.addEventListener("click", () => {
   closeButtonFeedback.classList.remove("button-feedback-active");
 });
 
+document.getElementById('content').addEventListener("click", () => {
+  closeButtonFeedback.classList.remove("button-feedback-active");
+});
+
 
 closeButtonFeedback.addEventListener("click", () => {
   document.getElementById("header__menu").classList.remove("menu-btn-active");
@@ -308,6 +312,10 @@ for (let i = 0; i < callButton.length; i++) {
     document.getElementById("call").classList.toggle("modal-call-active");
   });
 }
+
+document.getElementById('content').addEventListener("click", () => {
+  closeButtonFeedback.classList.remove("button-call-active");
+});
 
 document.querySelectorAll(".call")[0].addEventListener("click", () => {
   document.getElementById("content").classList.toggle("content-active");
