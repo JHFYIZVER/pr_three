@@ -122,7 +122,7 @@
   }
 
   .give-more{
-    max-width: 300px;
+    width: 300px;
   }
 
   .give-more span:nth-child(1){
