@@ -22,7 +22,7 @@
   }
 
   .header__button-setting,
-   header__button-search {
+  header__button-search {
     visibility: visible;
   }
 
@@ -30,8 +30,8 @@
     font-weight: bold;
     min-width: 130px;
   }
-  
-  .header__button-text:hover{
+
+  .header__button-text:hover {
     cursor: pointer;
   }
 
@@ -57,7 +57,7 @@
 
   /* Aside */
 
-  .header-button-menu{
+  .header-button-menu {
     display: none;
   }
 
@@ -69,7 +69,7 @@
     background-color: #fff;
     width: 320px;
     min-height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
     transition: transform 0.5s;
   }
 
@@ -78,13 +78,22 @@
     position: fixed;
     transform: none;
     min-height: 100vmax;
+    overflow: hidden;
   }
 
   .header__button-hidden {
     display: none;
   }
 
-  aside-main-nav{
+  .call-button-header {
+    visibility: hidden;
+  }
+
+  .chat-button-header {
+    visibility: hidden;
+  }
+
+  aside-main-nav {
     margin-bottom: 50px;
   }
 
@@ -98,6 +107,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
+  }
+
+  .title-reviews {
+    display: flex;
+    margin: 16px;
+    color: #7e7e82;
+    font-size: clamp(16px, 5vw, 20px);
   }
 
   .main__scroll-item-label {
@@ -117,8 +133,51 @@
     grid-template-rows: repeat(2, 1fr);
   }
 
-  .item-7,
-  .item-8 {
-    display: flex;
+  .main__swiper-repair-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .swiper-repair-item {
+    height: 72px;
+  }
+
+  .swiper-brend-item {
+    height: 72px;
+  }
+
+  /* Feedback */
+  .modal-feedback {
+    width: 440px;
+    overflow: visible;
+    right: -440px;
+  }
+
+  .modal-feedback-active{
+    overflow-x: visible;
+    max-height: 500px;
+  }
+  
+  .feedback-textarea{
+    max-width: 376px;
+  }
+
+  .button-feedback-active {
+    position: absolute;
+    left: -80px;
+    top: -9px;
+  }
+
+  /* Call */
+
+  .modal-call {
+    width: 440px;
+    overflow: visible;
+    right: -440px;
+  }
+
+  .button-call-active {
+    position: absolute;
+    left: -80px;
+    top: -9px;
   }
 }

@@ -1,5 +1,13 @@
 "use strict";
 
+/* Content */
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.getElementById("content").addEventListenerZ("click", () => {
+    document.getElementById("header__menu").classList.remove("menu-btn-active");
+  });
+});
+
 /* Aside */
 
 const navItem = document.querySelectorAll(".aside-nav-item");
@@ -35,7 +43,7 @@ for (let i = 0; i < buttonLanguage.length; i++) {
   });
 }
 
-const headerMenu = document.getElementById("header__menu")
+const headerMenu = document.getElementById("header__menu");
 
 document.addEventListener("DOMContentLoaded", () => {
   headerMenu.addEventListener("click", () => {
@@ -85,47 +93,53 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
   readMore.addEventListener("click", () => {
-    document.getElementById("icon-read-more").classList.toggle("icon-read-more-active");
+    document
+      .getElementById("icon-read-more")
+      .classList.toggle("icon-read-more-active");
   });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
   readMore.addEventListener("click", () => {
-    document.getElementById("icon-read-more").classList.toggle("icon-read-more-active");
+    document
+      .getElementById("icon-read-more")
+      .classList.toggle("icon-read-more-active");
   });
 });
 
-
 readMore.addEventListener("click", () => {
-  if (readMore.innerText === "Читать далее"){
-    readMore.innerText = "Скрыть"
+  if (readMore.innerText === "Читать далее") {
+    readMore.innerText = "Скрыть";
   } else {
-    readMore.innerText = "Читать далее"
-  };
-})
+    readMore.innerText = "Читать далее";
+  }
+});
 
 /* Btn-show-all */
 
 const showAll = document.getElementById("btn-show-all");
 
-
 showAll.addEventListener("click", () => {
-  if (showAll.innerText === "Показать все"){
-    showAll.innerText = "Скрыть"
+  if (showAll.innerText === "Показать все") {
+    showAll.innerText = "Скрыть";
   } else {
-    showAll.innerText = "Показать все"
-  };
-})
+    showAll.innerText = "Показать все";
+  }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   showAll.addEventListener("click", () => {
-    document.getElementById("brend-wrapper").classList.toggle("main__swiper-brend-wrapper-active");
+    document
+      .getElementById("brend-wrapper")
+      .classList.toggle("main__swiper-brend-wrapper-active");
   });
 });
 
 document.addEventListener("DOMContentLoaded", () => {
   showAll.addEventListener("click", () => {
-    document.getElementById("show-all").classList.toggle("main__brand-show-all-active");
+    document
+      .getElementById("show-all")
+      .classList.toggle("main__brand-show-all-active");
   });
 });
 
@@ -134,29 +148,32 @@ document.addEventListener("DOMContentLoaded", () => {
 const showAllRepair = document.getElementById("btn-show-all-repair");
 
 showAllRepair.addEventListener("click", () => {
-  if (showAllRepair.innerText === "Показать все"){
-    showAllRepair.innerText = "Скрыть"
+  if (showAllRepair.innerText === "Показать все") {
+    showAllRepair.innerText = "Скрыть";
   } else {
-    showAllRepair.innerText = "Показать все"
-  };
-})
-
+    showAllRepair.innerText = "Показать все";
+  }
+});
 
 document.addEventListener("DOMContentLoaded", () => {
   showAllRepair.addEventListener("click", () => {
-    document.getElementById("show-all-repair").classList.toggle("main__repair-show-all-active");
+    document
+      .getElementById("show-all-repair")
+      .classList.toggle("main__repair-show-all-active");
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   showAllRepair.addEventListener("click", () => {
-    document.getElementById("repair-wrapper").classList.toggle("main__swiper-repair-wrapper-active");
+    document
+      .getElementById("repair-wrapper")
+      .classList.toggle("main__swiper-repair-wrapper-active");
   });
 });
 
 const brendItem = document.querySelectorAll(".swiper-brend-item");
 
+const repairItem = document.querySelectorAll(".swiper-repair-item");
 
 for (let i = 0; i < brendItem.length; i++) {
   brendItem[i].addEventListener("click", () => {
@@ -167,12 +184,162 @@ for (let i = 0; i < brendItem.length; i++) {
   });
 }
 
+for (let i = 0; i < repairItem.length; i++) {
+  repairItem[i].addEventListener("click", () => {
+    for (let j = 0; j < brendItem.length; j++) {
+      repairItem[j].classList.remove("swiper-repair-item-active");
+    }
+    repairItem[i].classList.add("swiper-repair-item-active");
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   showAllRepair.addEventListener("click", () => {
-    document.getElementById("brend-wrapper").classList.toggle("brend-wrapper-active");
+    document
+      .getElementById("brend-wrapper")
+      .classList.toggle("brend-wrapper-active");
   });
 });
 
+/* Modal-feedback */
+
+const chatButton = document.getElementsByClassName("chat");
+
+document.getElementById("content").addEventListener("click", () => {
+  document.getElementById("feedback").classList.remove("modal-feedback-active");
+});
+
+for (let i = 0; i < chatButton.length; i++) {
+  chatButton[i].addEventListener("click", () => {
+    document
+      .getElementById("feedback")
+      .classList.toggle("modal-feedback-active");
+  });
+}
+
+for (let i = 0; i < chatButton.length; i++) {
+  chatButton[i].addEventListener("click", () => {
+    document.getElementById("call").classList.remove("modal-call-active");
+  });
+}
+
+const closeButtonFeedback = document.getElementById("close-feedback");
+
+for (let i = 0; i < chatButton.length; i++) {
+  chatButton[i].addEventListener("click", () => {
+    closeButtonFeedback.classList.toggle("button-feedback-active");
+  });
+}
+
+closeButtonFeedback.addEventListener("click", () => {
+  document.getElementById("feedback").classList.remove("modal-feedback-active");
+});
+
+closeButtonFeedback.addEventListener("click", () => {
+  closeButtonFeedback.classList.remove("button-feedback-active");
+});
+
+
+closeButtonFeedback.addEventListener("click", () => {
+  document.getElementById("header__menu").classList.remove("menu-btn-active");
+});
+
+for (let i = 0; i < chatButton.length; i++) {
+  chatButton[i].addEventListener("click", () => {
+    document.getElementById("menu").classList.remove("aside-active");
+  });
+}
+
+for (let i = 0; i < chatButton.length; i++) {
+  chatButton[i].addEventListener("click", () => {
+    document.getElementById("header__menu").classList.add("menu-btn-active");
+  });
+}
+
+for (let i = 0; i < chatButton.length; i++) {
+  chatButton[i].addEventListener("click", () => {
+    document.getElementById("header__menu").classList.remove("cross-active");
+  });
+}
+
+for (let i = 0; i < chatButton.length; i++) {
+  chatButton[i].addEventListener("click", () => {
+    document.getElementById("content").classList.toggle("content-active");
+  });
+}
+
+closeButtonFeedback.addEventListener("click", () => {
+  document.getElementById("content").classList.remove("content-active");
+});
+
+/* Modal-call */
+
+const callButton = document.querySelectorAll(".call");
+
+for (let i = 0; i < callButton.length; i++) {
+  callButton[i].addEventListener("click", () => {
+    document.getElementById("call").classList.toggle("modal-call-active");
+  });
+}
+
+
+const closeButtonCall = document.getElementById("close-call");
+
+for (let i = 0; i < callButton.length; i++) {
+  callButton[i].addEventListener("click", () => {
+    closeButtonCall.classList.toggle("button-call-active");
+  });
+}
+
+closeButtonCall.addEventListener("click", () => {
+  closeButtonCall.classList.remove("button-call-active");
+});
+
+closeButtonCall.addEventListener("click", () => {
+  document.getElementById("call").classList.remove("modal-call-active");
+});
+
+for (let i = 0; i < callButton.length; i++) {
+  callButton[i].addEventListener("click", () => {
+    document
+      .getElementById("feedback")
+      .classList.remove("modal-feedback-active");
+  });
+}
+
+for (let i = 0; i < callButton.length; i++) {
+  callButton[i].addEventListener("click", () => {
+    document.getElementById("menu").classList.remove("aside-active");
+  });
+}
+
+closeButtonCall.addEventListener("click", () => {
+  document.getElementById("header__menu").classList.remove("menu-btn-activ");
+});
+
+closeButtonCall.addEventListener("click", () => {
+  document.getElementById("header__menu").classList.remove("menu-btn-active");
+});
+
+closeButtonCall.addEventListener("click", () => {
+  document.getElementById("content").classList.remove("content-active");
+});
+
+for (let i = 0; i < callButton.length; i++) {
+  callButton[i].addEventListener("click", () => {
+    document.getElementById("header__menu").classList.add("menu-btn-active");
+  });
+}
+
+for (let i = 0; i < callButton.length; i++) {
+  callButton[i].addEventListener("click", () => {
+    document.getElementById("content").classList.toggle("content-active");
+  });
+}
+
+document.getElementById("content").addEventListener("click", () => {
+  document.getElementById("call").classList.remove("modal-call-active");
+});
 
 /* Swiper */
 
@@ -193,7 +360,6 @@ const brendSwiper = new Swiper(".main__swiper-brend", {
   },
 });
 
-
 const repairSwiper = new Swiper(".main__swiper-repair", {
   slidesPerView: "auto",
   spaceBetween: 16,
@@ -211,4 +377,19 @@ const repairSwiper = new Swiper(".main__swiper-repair", {
   },
 });
 
-
+const costSwiper = new Swiper(".main__swiper-cost", {
+  slidesPerView: "auto",
+  spaceBetween: 16,
+  observer: true,
+  breakpoints: {
+    768: {
+      spaceBetween: 0,
+      enabled: false,
+    },
+  },
+  pagination: {
+    el: ".cost__swiper-pagination",
+    clickable: true,
+    type: "bullets",
+  },
+});

@@ -14,12 +14,30 @@
     <title>CPS</title>
   </head>
   <body>
-    <button id="header__menu" class="button header-button-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
     <div class="container">
+      <button id="header__menu" class="button header-button-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <button class="button footer-button call call-button-header">
+        <img
+          src="./img/phone.svg"
+          alt=""
+          aria-hidden="true"
+          width="18"
+          height="16"
+        />
+      </button>
+      <button class="button footer-button chat chat-button-header">
+        <img
+          src="./img/message.svg"
+          alt=""
+          aria-hidden="true"
+          width="18"
+          height="16"
+        />
+      </button>
       <aside id="menu" class="page-aside">
         <div class="aside-header">
           <div class="header-logo">
@@ -71,7 +89,7 @@
         </div>
         <div class="aside-footer">
           <div class="footer-button-contact">
-            <button class="button footer-button">
+            <button class="button footer-button call">
               <img
                 src="./img/phone.svg"
                 alt=""
@@ -80,7 +98,7 @@
                 height="16"
               />
             </button>
-            <button class="button footer-button">
+            <button class="button footer-button chat">
               <img
                 src="./img/message.svg"
                 alt=""
@@ -99,7 +117,6 @@
               />
             </button>
           </div>
-
           <ul class="footer-contact-info">
             <li class="footer-contact-info-item">
               <a class="footer-link-info" href="#">mail@cps.com </a>
@@ -137,24 +154,8 @@
             <img src="./img/line.svg" />
           </div>
           <nav class="header__nav">
-            <button class="button header__button-hidden">
-              <img
-                src="./img/phone.svg"
-                alt=""
-                aria-hidden="true"
-                width="18"
-                height="18"
-              />
-            </button>
-            <button class="button header__button-hidden">
-              <img
-                src="./img/message.svg"
-                alt=""
-                aria-hidden="true"
-                width="20"
-                height="20"
-              />
-            </button>
+
+
             <button class="button header__button-hidden">
               <img
                 src="./img/contact.svg"
@@ -263,9 +264,10 @@
               </div>
             </div>
           </section>
-          <div class="main__description">
+          <section class="main__description">
             <div class="main__description-text">
               <div class="text">
+                <h2 class="title-reviews">Отзывы</h2>
                 <p id="short-text" class="main__description-text-mobile">
                   Мы являемся авторизованным сервисным центром по ремонту
                   техники Dell. Только у нас вы можете отремонтировать свой
@@ -291,7 +293,7 @@
             <div class="main__page-container">
               <img src="./img/cps.png" alt="" />
             </div>
-          </div>
+          </section>
           <section class="main__brend">
             <div class="main__sub-title">
               <h2 class="sub-title">Ремонт техники различных брендов</h2>
@@ -403,9 +405,7 @@
                     height="40"
                   />
                 </button>
-                <button
-                  class="swiper-slide swiper-brend-item item-7"
-                >
+                <button class="swiper-slide swiper-brend-item item-7">
                   <img
                     class="company"
                     src="./img/ViewSonic.png"
@@ -422,9 +422,7 @@
                     height="40"
                   />
                 </button>
-                <button
-                  class="swiper-slide swiper-brend-item item-8"
-                >
+                <button class="swiper-slide swiper-brend-item item-8">
                   <img
                     class="company"
                     src="./img/Sony.png"
@@ -562,9 +560,344 @@
               <button id="btn-show-all-repair">Показать все</button>
             </div>
           </section>
+          <section class="main__cost-section">
+            <div class="main__sub-title">
+              <h2 class="sub-title">Цены на услуги</h2>
+            </div>
+            <div class="swiper main__swiper-cost">
+              <div
+                id="cost-wrapper"
+                class="swiper-wrapper main__swiper-cost-wrapper"
+              >
+                <table class="swiper-slide swiper-cost-item">
+                  <tr>
+                    <td class="td-header">
+                      <p class="text-title table-text-title-header">
+                        Ремонтные услуги
+                      </p>
+                      <p class="text-table table-text-header">
+                        Тестирование с выдачей технического заключения
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-middle">
+                      <p class="text-title table-text-title-middle">Цена</p>
+                      <p class="text-table table-text-middle">1 000 ₽</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-footer">
+                      <div>
+                        <p class="text-title table-text-title-footer">Срок</p>
+                        <p class="text-table table-text-footer">30-120 мин</p>
+                      </div>
+                      <button class="table-order-button">
+                        <p>Заказать</p>
+                        <img src="./img/mini-arrow.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+                <table class="swiper-slide swiper-cost-item">
+                  <tr>
+                    <td class="td-header">
+                      <p class="text-title table-text-title-header">
+                        Ремонтные услуги
+                      </p>
+                      <p class="text-table table-text-header">
+                        Тестирование с выдачей технического заключения
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-middle">
+                      <p class="text-title table-text-title-middle">Цена</p>
+                      <p class="text-table table-text-middle">Бесплатно</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-footer">
+                      <div>
+                        <p class="text-title table-text-title-footer">Срок</p>
+                        <p class="text-table table-text-footer">30-120 мин</p>
+                      </div>
+                      <button class="table-order-button">
+                        <p class="pppp">Заказать</p>
+                        <img src="./img/mini-arrow.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+                <table class="swiper-slide swiper-cost-item">
+                  <tr>
+                    <td class="td-header">
+                      <p class="text-title table-text-title-header">
+                        Ремонтные услуги
+                      </p>
+                      <p class="text-table table-text-header">
+                        Тестирование с выдачей технического заключения
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-middle">
+                      <p class="text-title table-text-title-middle">Цена</p>
+                      <p class="text-table table-text-middle">Бесплатно</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-footer">
+                      <div>
+                        <p class="text-title table-text-title-footer">Срок</p>
+                        <p class="text-table table-text-footer">30-120 мин</p>
+                      </div>
+                      <button class="table-order-button">
+                        <p class="pppp">Заказать</p>
+                        <img src="./img/mini-arrow.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+                <table class="swiper-slide swiper-cost-item">
+                  <tr>
+                    <td class="td-header">
+                      <p class="text-title table-text-title-header">
+                        Ремонтные услуги
+                      </p>
+                      <p class="text-table table-text-header">
+                        Тестирование с выдачей технического заключения
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-middle">
+                      <p class="text-title table-text-title-middle">Цена</p>
+                      <p class="text-table table-text-middle">Бесплатно</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-footer">
+                      <div>
+                        <p class="text-title table-text-title-footer">Срок</p>
+                        <p class="text-table table-text-footer">30-120 мин</p>
+                      </div>
+                      <button class="table-order-button">
+                        <p class="pppp">Заказать</p>
+                        <img src="./img/mini-arrow.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+                <table class="swiper-slide swiper-cost-item">
+                  <tr>
+                    <td class="td-header">
+                      <p class="text-title table-text-title-header">
+                        Ремонтные услуги
+                      </p>
+                      <p class="text-table table-text-header">
+                        Тестирование с выдачей технического заключения
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-middle">
+                      <p class="text-title table-text-title-middle">Цена</p>
+                      <p class="text-table table-text-middle">Бесплатно</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="td-footer">
+                      <div>
+                        <p class="text-title table-text-title-footer">Срок</p>
+                        <p class="text-table table-text-footer">30-120 мин</p>
+                      </div>
+                      <button class="table-order-button">
+                        <p class="pppp">Заказать</p>
+                        <img src="./img/mini-arrow.svg" />
+                      </button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <div class="swiper-pagination cost__swiper-pagination"></div>
+          </section>
+          <section class="main__cost-section-copy">
+            <div class="main__sub-title">
+              <h2 class="sub-title">Цены на услуги</h2>
+            </div>
+            <table class="table-copy">
+              <thead>
+                <tr>
+                  <td>Ремонтные услуги</td>
+                  <td>Цена</td>
+                  <td>Срок</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Диагностика</td>
+                  <td>Бесплатно</td>
+                  <td>30 мин</td>
+                  <td>
+                    <button class="table-order-button">
+                      <p class="pppp">Заказать</p>
+                      <img src="./img/mini-arrow.svg" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Замена дисплея</td>
+                  <td>1 000 ₽</td>
+                  <td>30-120 мин</td>
+                  <td>
+                    <button class="table-order-button">
+                      <p class="pppp">Заказать</p>
+                      <img src="./img/mini-arrow.svg" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Замена полифонического динамика</td>
+                  <td>1 000 ₽</td>
+                  <td>30-120 мин</td>
+                  <td>
+                    <button class="table-order-button">
+                      <p class="pppp">Заказать</p>
+                      <img src="./img/mini-arrow.svg" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Тестирование с выдачей технического заключения</td>
+                  <td>1 000 ₽</td>
+                  <td>30-120 мин</td>
+                  <td>
+                    <button class="table-order-button">
+                      <p class="pppp">Заказать</p>
+                      <img src="./img/mini-arrow.svg" />
+                    </button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Замена программного обеспечения</td>
+                  <td>1 000 ₽</td>
+                  <td>30-120 мин</td>
+                  <td>
+                    <button class="table-order-button">
+                      <p class="pppp">Заказать</p>
+                      <img src="./img/mini-arrow.svg" />
+                    </button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </section>
+          <section class="main-section-conclusion">
+            <div class="conclusion-text">
+              Все цены указаны с учетом НДС. Стоимость ремонта указана на
+              единичную услугу. Для получения коммерческого предложения на
+              постоянное обслуживание, оставьте заявку.
+            </div>
+            <div class="give-more">
+              Получить коммерческое предложение
+              <span></span>
+              <span></span>
+            </div>
+          </section>
+          <footer class="footer-feedback">
+            <p>
+              © 2019 CPS <br />
+              Разработано командой Apesong
+            </p>
+            <p>Политика конфиденциальности</p>
+            <p>
+              Информация, размещенная на данной странице, не является публичной
+              офертой
+            </p>
+          </footer>
         </main>
-        <footer></footer>
       </div>
+      <aside id="feedback" class="modal-feedback">
+        <header>
+          <button id="close-feedback" class="button button-feedback">
+            <span></span>
+            <span></span>
+          </button>
+        </header>
+        <main>
+          <h2 class="title title-feedback">Обратная связь</h2>
+          <form class="feedback-form">
+            <input
+              class="feedback-form-item"
+              type="text"
+              name="username"
+              placeholder="Имя"
+            />
+            <input
+              class="feedback-form-item"
+              type="tel"
+              name="username"
+              placeholder="Телефон"
+            />
+            <input
+              class="feedback-form-item"
+              type="email"
+              name="username"
+              placeholder="Электронная почта"
+            />
+            <textarea
+              class="feedback-form-item feedback-textarea"
+              name="message"
+              placeholder="Сообщение"
+            ></textarea>
+          </form>
+        </main>
+        <footer class="footer-feedback">
+          <div class="feedback-footer-text">
+            Нажимая “отправить”, вы даете согласие на
+            <span style="color: #ff3e79">обработку персональных данных</span> и
+            соглашаетесь с нашей
+            <span style="color: #ff3e79">политикой конфиденциальности</span>
+          </div>
+          <button class="feedback-order-button">
+            <p>ОТПРАВИТЬ</p>
+            <img src="./img/mini-arrow.svg" />
+          </button>
+        </footer>
+      </aside>
+      <aside id="call" class="modal-call">
+        <header>
+          <button id="close-call" class="button button-call">
+            <span></span>
+            <span></span>
+          </button>
+        </header>
+        <main>
+          <h2 class="title title-call">Заказать звонок</h2>
+          <form class="call-form">
+            <input
+              class="call-form-item"
+              type="tel"
+              name="username"
+              placeholder="Телефон"
+            />
+          </form>
+        </main>
+        <footer class="footer-call">
+          <div class="call-footer-text">
+            Нажимая “отправить”, вы даете согласие на
+            <span style="color: #ff3e79">обработку персональных данных</span> и
+            соглашаетесь с нашей
+            <span style="color: #ff3e79">политикой конфиденциальности</span>
+          </div>
+          <button class="call-order-button">
+            <p>ОТПРАВИТЬ</p>
+            <img src="./img/mini-arrow.svg" />
+          </button>
+        </footer>
+      </aside>
     </div>
   </body>
 </html>
