@@ -237,6 +237,10 @@ document.getElementsByClassName("chat")[1].addEventListener("click", () => {
   document.getElementById("content").classList.toggle("content-active");
 });
 
+document.getElementById('content').addEventListener("click", () => {
+  document.getElementById("close-feedback").classList.remove("button-feedback-active");
+});
+
 for (let i = 0; i < chatButton.length; i++) {
   chatButton[i].addEventListener("click", () => {
     document
@@ -314,7 +318,7 @@ for (let i = 0; i < callButton.length; i++) {
 }
 
 document.getElementById('content').addEventListener("click", () => {
-  closeButtonFeedback.classList.remove("button-call-active");
+  document.getElementById("close-call").classList.remove("button-call-active");
 });
 
 document.querySelectorAll(".call")[0].addEventListener("click", () => {
