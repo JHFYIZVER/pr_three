@@ -775,7 +775,7 @@ img {
   flex-direction: row;
   align-items: center;
   position: relative;
-  max-width: 200px;
+  width: 200px;
 }
 
 .give-more span {
