@@ -240,6 +240,7 @@ body {
   box-shadow: 0.5px 0px 20px 0px #919191;
 }
 
+
 /* Aside__header */
 
 .aside-header {
@@ -906,6 +907,10 @@ img {
   transition: all 0.3s ease;
 }
 
+.chat-button-header-active{
+  opacity: 20%;
+}
+
 .footer-feedback {
   display: grid;
 }
@@ -963,6 +968,10 @@ img {
 .button-call span:nth-child(2) {
   transform: rotate(-45deg);
   transition: all 0.5s;
+}
+
+.call-button-header-active{
+  opacity: 20%;
 }
 
 .title-call {

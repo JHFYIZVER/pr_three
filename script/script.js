@@ -51,6 +51,26 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+headerMenu.addEventListener("click", () => {
+  document.getElementsByClassName("call-button-header")[0].classList.toggle("call-button-header-active");
+});
+
+document.getElementById('content').addEventListener("click", () => {
+  document.getElementById("header__menu").classList.remove("menu-btn-active")
+})
+
+headerMenu.addEventListener("click", () => {
+  document.getElementsByClassName("chat-button-header")[0].classList.toggle("chat-button-header-active");
+});
+
+document.getElementById('content').addEventListener("click", () => {
+  document.getElementsByClassName("call-button-header")[0].classList.remove("call-button-header-active");
+});
+
+document.getElementById('content').addEventListener("click", () => {
+  document.getElementsByClassName("chat-button-header")[0].classList.remove("chat-button-header-active");
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("header__menu").addEventListener("click", () => {
     document.getElementById("header__menu").classList.toggle("cross-active");
@@ -209,6 +229,10 @@ document.getElementById("content").addEventListener("click", () => {
   document.getElementById("feedback").classList.remove("modal-feedback-active");
 });
 
+document.getElementsByClassName("chat")[1].addEventListener("click", () => {
+  document.getElementById("content").classList.toggle("content-active");
+});
+
 for (let i = 0; i < chatButton.length; i++) {
   chatButton[i].addEventListener("click", () => {
     document
@@ -224,6 +248,10 @@ for (let i = 0; i < chatButton.length; i++) {
 }
 
 const closeButtonFeedback = document.getElementById("close-feedback");
+
+closeButtonFeedback.addEventListener("click", () => {
+  document.getElementsByClassName("chat-button-header")[0].classList.remove("chat-button-header-active");
+});
 
 for (let i = 0; i < chatButton.length; i++) {
   chatButton[i].addEventListener("click", () => {
@@ -282,6 +310,11 @@ for (let i = 0; i < callButton.length; i++) {
   });
 }
 
+document.querySelectorAll(".call")[1].addEventListener("click", () => {
+  document.getElementById("content").classList.toggle("content-active");
+});
+
+
 
 const closeButtonCall = document.getElementById("close-call");
 
@@ -290,6 +323,10 @@ for (let i = 0; i < callButton.length; i++) {
     closeButtonCall.classList.toggle("button-call-active");
   });
 }
+
+closeButtonCall.addEventListener("click", () => {
+  document.getElementsByClassName("chat-button-header")[0].classList.remove("chat-button-header-active");
+});
 
 closeButtonCall.addEventListener("click", () => {
   closeButtonCall.classList.remove("button-call-active");
@@ -324,6 +361,7 @@ closeButtonCall.addEventListener("click", () => {
 closeButtonCall.addEventListener("click", () => {
   document.getElementById("content").classList.remove("content-active");
 });
+
 
 for (let i = 0; i < callButton.length; i++) {
   callButton[i].addEventListener("click", () => {
